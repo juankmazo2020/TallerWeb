@@ -1,0 +1,34 @@
+{
+  "dependencies": {
+    "secrets1": {
+      "restored": true,
+      "restoreTime": "2020-09-04T01:28:28.9313972Z"
+    },
+    "mssql1": {
+      "restored": true,
+      "restoreTime": "2020-09-04T01:28:45.1616156Z"
+    }
+  },
+  "parameters": {
+    "secrets1.resourceGroupName": {
+      "Name": "secrets1.resourceGroupName",
+      "Type": "resourceGroup",
+      "Value": "TallerWeb"
+    },
+    "mssql1.subscriptionId": {
+      "Name": "mssql1.subscriptionId",
+      "Type": "subscription",
+      "Value": "17216a34-7597-49ee-b10d-7c78a9c2a1df"
+    },
+    "mssql1.resourceGroupName": {
+      "Name": "mssql1.resourceGroupName",
+      "Type": "resourceGroup",
+      "Value": "Taller_Web"
+    },
+    "secrets1.subscriptionId": {
+      "Name": "secrets1.subscriptionId",
+      "Type": "subscription",
+      "Value": "17216a34-7597-49ee-b10d-7c78a9c2a1df"
+    }
+  }
+}
