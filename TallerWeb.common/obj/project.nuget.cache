@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "PopJap0khuztZUsmemHv7t7doSh0m9Dy4Za9qVN3vrqwgDEp+Mvag4OAopWCKbzhyehMx3DvCiVZM+OrHSWwCA==",
+  "dgSpecHash": "k2NtnrHv/SJ3h8yGASpsC0a8Wbsr9yfeCm9ZHM1fijUNgd1unBwM1PcYDInQBhujVngDydCyh8VAaoHiDOs/3g==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Joyner Garcia\\Documents\\Project\\TallerWeb\\TallerWeb.common\\TallerWeb.Common.csproj",
+  "projectFilePath": "C:\\Users\\Joyner Garcia\\Documents\\Project\\juankmazo2020\\TallerWeb\\TallerWeb.common\\TallerWeb.Common.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Joyner Garcia\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
     "C:\\Users\\Joyner Garcia\\.nuget\\packages\\microsoft.bcl.hashcode\\1.1.0\\microsoft.bcl.hashcode.1.1.0.nupkg.sha512",

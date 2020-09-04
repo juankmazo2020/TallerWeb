@@ -67,5 +67,4 @@ namespace TallerWeb.Web.Models
         public int ProfessionId { get; set; }
         public IEnumerable<SelectListItem> Professions { get; set; }
     }
-
 }

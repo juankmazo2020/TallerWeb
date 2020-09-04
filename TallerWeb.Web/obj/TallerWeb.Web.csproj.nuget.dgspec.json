@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Joyner Garcia\\Documents\\Project\\TallerWeb\\TallerWeb.Web\\TallerWeb.Web.csproj": {}
+    "C:\\Users\\Joyner Garcia\\Documents\\Project\\juankmazo2020\\TallerWeb\\TallerWeb.Web\\TallerWeb.Web.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Joyner Garcia\\Documents\\Project\\TallerWeb\\TallerWeb.common\\TallerWeb.Common.csproj": {
+    "C:\\Users\\Joyner Garcia\\Documents\\Project\\juankmazo2020\\TallerWeb\\TallerWeb.common\\TallerWeb.Common.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Joyner Garcia\\Documents\\Project\\TallerWeb\\TallerWeb.common\\TallerWeb.Common.csproj",
+        "projectUniqueName": "C:\\Users\\Joyner Garcia\\Documents\\Project\\juankmazo2020\\TallerWeb\\TallerWeb.common\\TallerWeb.Common.csproj",
         "projectName": "TallerWeb.Common",
-        "projectPath": "C:\\Users\\Joyner Garcia\\Documents\\Project\\TallerWeb\\TallerWeb.common\\TallerWeb.Common.csproj",
+        "projectPath": "C:\\Users\\Joyner Garcia\\Documents\\Project\\juankmazo2020\\TallerWeb\\TallerWeb.common\\TallerWeb.Common.csproj",
         "packagesPath": "C:\\Users\\Joyner Garcia\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Joyner Garcia\\Documents\\Project\\TallerWeb\\TallerWeb.common\\obj\\",
+        "outputPath": "C:\\Users\\Joyner Garcia\\Documents\\Project\\juankmazo2020\\TallerWeb\\TallerWeb.common\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\"
@@ -85,14 +85,14 @@
         }
       }
     },
-    "C:\\Users\\Joyner Garcia\\Documents\\Project\\TallerWeb\\TallerWeb.Web\\TallerWeb.Web.csproj": {
+    "C:\\Users\\Joyner Garcia\\Documents\\Project\\juankmazo2020\\TallerWeb\\TallerWeb.Web\\TallerWeb.Web.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Joyner Garcia\\Documents\\Project\\TallerWeb\\TallerWeb.Web\\TallerWeb.Web.csproj",
+        "projectUniqueName": "C:\\Users\\Joyner Garcia\\Documents\\Project\\juankmazo2020\\TallerWeb\\TallerWeb.Web\\TallerWeb.Web.csproj",
         "projectName": "TallerWeb.Web",
-        "projectPath": "C:\\Users\\Joyner Garcia\\Documents\\Project\\TallerWeb\\TallerWeb.Web\\TallerWeb.Web.csproj",
+        "projectPath": "C:\\Users\\Joyner Garcia\\Documents\\Project\\juankmazo2020\\TallerWeb\\TallerWeb.Web\\TallerWeb.Web.csproj",
         "packagesPath": "C:\\Users\\Joyner Garcia\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Joyner Garcia\\Documents\\Project\\TallerWeb\\TallerWeb.Web\\obj\\",
+        "outputPath": "C:\\Users\\Joyner Garcia\\Documents\\Project\\juankmazo2020\\TallerWeb\\TallerWeb.Web\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\"
@@ -113,8 +113,8 @@
           "netcoreapp2.1": {
             "targetAlias": "netcoreapp2.1",
             "projectReferences": {
-              "C:\\Users\\Joyner Garcia\\Documents\\Project\\TallerWeb\\TallerWeb.common\\TallerWeb.Common.csproj": {
-                "projectPath": "C:\\Users\\Joyner Garcia\\Documents\\Project\\TallerWeb\\TallerWeb.common\\TallerWeb.Common.csproj"
+              "C:\\Users\\Joyner Garcia\\Documents\\Project\\juankmazo2020\\TallerWeb\\TallerWeb.common\\TallerWeb.Common.csproj": {
+                "projectPath": "C:\\Users\\Joyner Garcia\\Documents\\Project\\juankmazo2020\\TallerWeb\\TallerWeb.common\\TallerWeb.Common.csproj"
               }
             }
           }

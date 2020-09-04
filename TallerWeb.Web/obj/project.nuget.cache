@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ho6OHUBUvVVhhKj0f8LI5BDUoZP0ZmgzNiWn6Ka9mia0terSPm+RM1bMHseJW/nDo7r65PP0DRNXcf1jGpRUSA==",
+  "dgSpecHash": "09nv5s+U91RwAj/rvEkH6Z9/DuY+UYSveOlmWwlXHI0A2dNQT1Xi2FUxWnxhQ+s4LiouiY2MjiAcJfmOUqO9iw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Joyner Garcia\\Documents\\Project\\TallerWeb\\TallerWeb.Web\\TallerWeb.Web.csproj",
+  "projectFilePath": "C:\\Users\\Joyner Garcia\\Documents\\Project\\juankmazo2020\\TallerWeb\\TallerWeb.Web\\TallerWeb.Web.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Joyner Garcia\\.nuget\\packages\\mailkit\\2.8.0\\mailkit.2.8.0.nupkg.sha512",
     "C:\\Users\\Joyner Garcia\\.nuget\\packages\\microsoft.aspnet.webapi.client\\5.2.6\\microsoft.aspnet.webapi.client.5.2.6.nupkg.sha512",

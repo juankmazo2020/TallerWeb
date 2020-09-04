@@ -7,8 +7,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TallerWeb.Common", "TallerW
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TallerWeb.Web", "TallerWeb.Web\TallerWeb.Web.csproj", "{25D9EE83-6574-4FDA-8BE7-DC1D32C52B41}"
 EndProject
-Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Prueba", "Prueba\Prueba.vdproj", "{D091D6CE-6507-4EB2-9AB4-FFC3C8C6AB1C}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -23,8 +21,6 @@ Global
 		{25D9EE83-6574-4FDA-8BE7-DC1D32C52B41}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{25D9EE83-6574-4FDA-8BE7-DC1D32C52B41}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{25D9EE83-6574-4FDA-8BE7-DC1D32C52B41}.Release|Any CPU.Build.0 = Release|Any CPU
-		{D091D6CE-6507-4EB2-9AB4-FFC3C8C6AB1C}.Debug|Any CPU.ActiveCfg = Debug
-		{D091D6CE-6507-4EB2-9AB4-FFC3C8C6AB1C}.Release|Any CPU.ActiveCfg = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
