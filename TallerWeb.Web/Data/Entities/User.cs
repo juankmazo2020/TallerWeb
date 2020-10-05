@@ -31,7 +31,7 @@ namespace TallerWeb.Web.Data.Entities
         //TODO: Pending to put the correct paths
         [Display(Name = "Image")]
         public string ImageFullPath => ImageId == Guid.Empty
-            ? $"https://tallerwebweb.azurewebsites.net//images/No_image.png"
+            ? $"https://localhost:44396/images/No_image.png"
             : $"https://tallerweb.blob.core.windows.net/users/{ImageId}";
 
         [Display(Name = "User Type")]

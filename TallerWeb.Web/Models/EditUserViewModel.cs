@@ -54,8 +54,8 @@ namespace TallerWeb.Web.Models
         public Guid ImageId { get; set; }
 
         [Display(Name = "Image")] 
-        public string ImageFullPath => ImageId == Guid.Empty
-            ? $"https://tallerwebweb.azurewebsites.net//images/No_image.png" 
+        public string ImageFullPath => ImageId == Guid.Empty 
+            ? $"https://localhost:44396/images/No_image.png" 
             : $"https://tallerweb.blob.core.windows.net/users/{ImageId}";
 
         [Display(Name = "Image")]

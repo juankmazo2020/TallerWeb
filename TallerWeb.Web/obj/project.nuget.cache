@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "09nv5s+U91RwAj/rvEkH6Z9/DuY+UYSveOlmWwlXHI0A2dNQT1Xi2FUxWnxhQ+s4LiouiY2MjiAcJfmOUqO9iw==",
+  "dgSpecHash": "6V4yASDw1Ay4lFIveF+dTfZIBKSkTvgPtvoBng6BIzIDTKI5AqYVcz6/7yhCSH/6irFi8xsaV59HrNaoz/kz2A==",
   "success": true,
   "projectFilePath": "C:\\Users\\Joyner Garcia\\Documents\\Project\\juankmazo2020\\TallerWeb\\TallerWeb.Web\\TallerWeb.Web.csproj",
   "expectedPackageFiles": [
@@ -192,7 +192,7 @@
     "C:\\Users\\Joyner Garcia\\.nuget\\packages\\microsoft.win32.registry\\4.5.0\\microsoft.win32.registry.4.5.0.nupkg.sha512",
     "C:\\Users\\Joyner Garcia\\.nuget\\packages\\mimekit\\2.9.1\\mimekit.2.9.1.nupkg.sha512",
     "C:\\Users\\Joyner Garcia\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
-    "C:\\Microsoft\\Xamarin\\NuGet\\newtonsoft.json\\11.0.2\\newtonsoft.json.11.0.2.nupkg.sha512",
+    "C:\\Users\\Joyner Garcia\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512",
     "C:\\Users\\Joyner Garcia\\.nuget\\packages\\newtonsoft.json.bson\\1.0.1\\newtonsoft.json.bson.1.0.1.nupkg.sha512",
     "C:\\Users\\Joyner Garcia\\.nuget\\packages\\nuget.frameworks\\4.7.0\\nuget.frameworks.4.7.0.nupkg.sha512",
     "C:\\Users\\Joyner Garcia\\.nuget\\packages\\portable.bouncycastle\\1.8.5\\portable.bouncycastle.1.8.5.nupkg.sha512",

@@ -10,3 +10,12 @@ C:\Users\Joyner Garcia\Documents\Project\TallerWeb\TallerWeb.common\obj\Debug\ne
 C:\Users\Joyner Garcia\Documents\Project\TallerWeb\TallerWeb.common\bin\Debug\netstandard2.0\Newtonsoft.Json.dll
 C:\Users\Joyner Garcia\Documents\Project\TallerWeb\TallerWeb.common\bin\Debug\netstandard2.0\Newtonsoft.Json.xml
 C:\Users\Joyner Garcia\Documents\Project\TallerWeb\TallerWeb.common\obj\Debug\netstandard2.0\TallerWeb.Common.csproj.CopyComplete
+C:\Users\Joyner Garcia\Documents\Project\juankmazo2020\TallerWeb\TallerWeb.common\obj\Debug\netstandard2.0\TallerWeb.Common.csprojAssemblyReference.cache
+C:\Users\Joyner Garcia\Documents\Project\juankmazo2020\TallerWeb\TallerWeb.common\obj\Debug\netstandard2.0\TallerWeb.Common.AssemblyInfoInputs.cache
+C:\Users\Joyner Garcia\Documents\Project\juankmazo2020\TallerWeb\TallerWeb.common\obj\Debug\netstandard2.0\TallerWeb.Common.AssemblyInfo.cs
+C:\Users\Joyner Garcia\Documents\Project\juankmazo2020\TallerWeb\TallerWeb.common\obj\Debug\netstandard2.0\TallerWeb.Common.csproj.CoreCompileInputs.cache
+C:\Users\Joyner Garcia\Documents\Project\juankmazo2020\TallerWeb\TallerWeb.common\obj\Debug\netstandard2.0\TallerWeb.Common.dll
+C:\Users\Joyner Garcia\Documents\Project\juankmazo2020\TallerWeb\TallerWeb.common\obj\Debug\netstandard2.0\TallerWeb.Common.pdb
+C:\Users\Joyner Garcia\Documents\Project\juankmazo2020\TallerWeb\TallerWeb.common\bin\Debug\netstandard2.0\TallerWeb.Common.deps.json
+C:\Users\Joyner Garcia\Documents\Project\juankmazo2020\TallerWeb\TallerWeb.common\bin\Debug\netstandard2.0\TallerWeb.Common.dll
+C:\Users\Joyner Garcia\Documents\Project\juankmazo2020\TallerWeb\TallerWeb.common\bin\Debug\netstandard2.0\TallerWeb.Common.pdb

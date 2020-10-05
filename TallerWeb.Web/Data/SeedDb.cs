@@ -27,13 +27,14 @@ namespace TallerWeb.Web.Data
             await CheckFieldsAsync();
             await CheckProfessionsAsync();
             await CheckRolesAsync();
-            await CheckUserAsync("1010", "Juan", "Zuluaga", "jzuluaga55@hotmail.com", "322 311 4620", "Calle Luna Calle Sol", UserType.Admin);
+            await CheckUserAsync("1090305482", "Daniel", "Corzo", "tallerweb123@gmail.com", "322 311 4620", "Carrera sur 5 casa No 7-6", UserType.Admin);
 
         }
 
         private async Task CheckRolesAsync()
         {
             await _userHelper.CheckRoleAsync(UserType.Admin.ToString());
+            await _userHelper.CheckRoleAsync(UserType.Teacher.ToString());
             await _userHelper.CheckRoleAsync(UserType.User.ToString());
         }
 
