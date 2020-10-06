@@ -1,0 +1,22 @@
+{
+  "version": 2,
+  "dgSpecHash": "Qy3mYka/uP9wJGiPhrpFzPpLGbaumYLttKQGw+K/bpCetdTqQXv05yse9U8Sl6LW3hIFMYyF3TzglK2oz3KyQg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Joyner Garcia\\Documents\\Project\\juankmazo2020\\TallerWeb\\TallerWeb.Prism\\TallerWeb.Prism.iOS\\TallerWeb.Prism.iOS.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Joyner Garcia\\.nuget\\packages\\dryioc.dll\\4.0.7\\dryioc.dll.4.0.7.nupkg.sha512",
+    "C:\\Users\\Joyner Garcia\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512",
+    "C:\\Users\\Joyner Garcia\\.nuget\\packages\\prism.core\\7.2.0.1422\\prism.core.7.2.0.1422.nupkg.sha512",
+    "C:\\Users\\Joyner Garcia\\.nuget\\packages\\prism.dryioc.forms\\7.2.0.1422\\prism.dryioc.forms.7.2.0.1422.nupkg.sha512",
+    "C:\\Users\\Joyner Garcia\\.nuget\\packages\\prism.forms\\7.2.0.1422\\prism.forms.7.2.0.1422.nupkg.sha512",
+    "C:\\Users\\Joyner Garcia\\.nuget\\packages\\system.componentmodel.annotations\\4.7.0\\system.componentmodel.annotations.4.7.0.nupkg.sha512",
+    "C:\\Users\\Joyner Garcia\\.nuget\\packages\\system.reflection.emit.lightweight\\4.3.0\\system.reflection.emit.lightweight.4.3.0.nupkg.sha512",
+    "C:\\Users\\Joyner Garcia\\.nuget\\packages\\webp.touch\\1.0.8\\webp.touch.1.0.8.nupkg.sha512",
+    "C:\\Microsoft\\Xamarin\\NuGet\\xamarin.essentials\\1.5.3.2\\xamarin.essentials.1.5.3.2.nupkg.sha512",
+    "C:\\Users\\Joyner Garcia\\.nuget\\packages\\xamarin.essentials.interfaces\\1.5.3.2\\xamarin.essentials.interfaces.1.5.3.2.nupkg.sha512",
+    "C:\\Users\\Joyner Garcia\\.nuget\\packages\\xamarin.ffimageloading\\2.4.11.982\\xamarin.ffimageloading.2.4.11.982.nupkg.sha512",
+    "C:\\Users\\Joyner Garcia\\.nuget\\packages\\xamarin.ffimageloading.forms\\2.4.11.982\\xamarin.ffimageloading.forms.2.4.11.982.nupkg.sha512",
+    "C:\\Users\\Joyner Garcia\\.nuget\\packages\\xamarin.forms\\4.8.0.1451\\xamarin.forms.4.8.0.1451.nupkg.sha512"
+  ],
+  "logs": []
+}

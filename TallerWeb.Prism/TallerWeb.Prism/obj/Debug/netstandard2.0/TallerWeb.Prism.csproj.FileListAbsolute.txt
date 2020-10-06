@@ -1,0 +1,15 @@
+C:\Users\Joyner Garcia\Documents\Project\juankmazo2020\TallerWeb\TallerWeb.Prism\TallerWeb.Prism\bin\Debug\netstandard2.0\TallerWeb.Prism.deps.json
+C:\Users\Joyner Garcia\Documents\Project\juankmazo2020\TallerWeb\TallerWeb.Prism\TallerWeb.Prism\bin\Debug\netstandard2.0\TallerWeb.Prism.dll
+C:\Users\Joyner Garcia\Documents\Project\juankmazo2020\TallerWeb\TallerWeb.Prism\TallerWeb.Prism\bin\Debug\netstandard2.0\TallerWeb.Prism.pdb
+C:\Users\Joyner Garcia\Documents\Project\juankmazo2020\TallerWeb\TallerWeb.Prism\TallerWeb.Prism\obj\Debug\netstandard2.0\TallerWeb.Prism.csprojAssemblyReference.cache
+C:\Users\Joyner Garcia\Documents\Project\juankmazo2020\TallerWeb\TallerWeb.Prism\TallerWeb.Prism\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\Joyner Garcia\Documents\Project\juankmazo2020\TallerWeb\TallerWeb.Prism\TallerWeb.Prism\obj\Debug\netstandard2.0\Views\MainPage.xaml.g.cs
+C:\Users\Joyner Garcia\Documents\Project\juankmazo2020\TallerWeb\TallerWeb.Prism\TallerWeb.Prism\obj\Debug\netstandard2.0\TallerWeb.Prism.AssemblyInfoInputs.cache
+C:\Users\Joyner Garcia\Documents\Project\juankmazo2020\TallerWeb\TallerWeb.Prism\TallerWeb.Prism\obj\Debug\netstandard2.0\TallerWeb.Prism.AssemblyInfo.cs
+C:\Users\Joyner Garcia\Documents\Project\juankmazo2020\TallerWeb\TallerWeb.Prism\TallerWeb.Prism\obj\Debug\netstandard2.0\TallerWeb.Prism.csproj.CoreCompileInputs.cache
+C:\Users\Joyner Garcia\Documents\Project\juankmazo2020\TallerWeb\TallerWeb.Prism\TallerWeb.Prism\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\Joyner Garcia\Documents\Project\juankmazo2020\TallerWeb\TallerWeb.Prism\TallerWeb.Prism\obj\Debug\netstandard2.0\TallerWeb.Prism.dll
+C:\Users\Joyner Garcia\Documents\Project\juankmazo2020\TallerWeb\TallerWeb.Prism\TallerWeb.Prism\obj\Debug\netstandard2.0\TallerWeb.Prism.pdb
+C:\Users\Joyner Garcia\Documents\Project\juankmazo2020\TallerWeb\TallerWeb.Prism\TallerWeb.Prism\bin\Debug\netstandard2.0\TallerWeb.Common.dll
+C:\Users\Joyner Garcia\Documents\Project\juankmazo2020\TallerWeb\TallerWeb.Prism\TallerWeb.Prism\bin\Debug\netstandard2.0\TallerWeb.Common.pdb
+C:\Users\Joyner Garcia\Documents\Project\juankmazo2020\TallerWeb\TallerWeb.Prism\TallerWeb.Prism\obj\Debug\netstandard2.0\TallerWeb.Prism.csproj.CopyComplete
