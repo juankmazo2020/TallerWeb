@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Identity;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using System;
@@ -35,6 +36,82 @@ namespace TallerWeb.Web.Controllers
             _mailHelper = mailHelper;
 
         }
+
+        [Authorize(Roles = "Admin")]
+        public async Task<IActionResult> Index()
+        {
+            return View(await _context.Users
+                .Include(u => u.Church)
+                .ToListAsync());
+        }
+
+
+        [Authorize(Roles = "Admin")]
+        [HttpGet]
+        public IActionResult Create()
+        {
+            AddUserViewModel model = new AddUserViewModel
+            {
+                Fields = _combosHelper.GetComboFields(),
+                Districts = _combosHelper.GetComboDistricts(0),
+                Churches = _combosHelper.GetComboChurches(0),
+                Professions = _combosHelper.GetComboProfessions(),
+            };
+
+            return View(model);
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> Create(AddUserViewModel model)
+        {
+            if (ModelState.IsValid)
+            {
+                Guid imageId = Guid.Empty;
+
+                if (model.ImageFile != null)
+                {
+                    imageId = await _blobHelper.UploadBlobAsync(model.ImageFile, "users");
+                }
+
+                User user = await _userHelper.AddUserAsync(model, imageId, UserType.Teacher);
+                if (user == null)
+                {
+                    ModelState.AddModelError(string.Empty, "This email is already used.");
+                    model.Fields = _combosHelper.GetComboFields();
+                    model.Districts = _combosHelper.GetComboDistricts(model.FieldId);
+                    model.Churches = _combosHelper.GetComboChurches(model.DistrictId);
+                    model.Professions = _combosHelper.GetComboProfessions();
+                    return View(model);
+                }
+
+                await _userHelper.AddUserToRoleAsync(user, UserType.Teacher.ToString());
+
+                string myToken = await _userHelper.GenerateEmailConfirmationTokenAsync(user);
+                string tokenLink = Url.Action("ConfirmEmail", "Account", new
+                {
+                    userid = user.Id,
+                    token = myToken
+                }, protocol: HttpContext.Request.Scheme);
+
+                Response response = _mailHelper.SendMail(model.Username, "Email confirmation", $"<h1>Email Confirmation</h1>" +
+                    $"To allow the user, " +
+                    $"plase click in this link:</br></br><a href = \"{tokenLink}\">Confirm Email</a>");
+                if (response.IsSuccess)
+                {
+                    ViewBag.Message = "The instructions to allow your user has been sent to email.";
+                    return View(model);
+                }
+
+                ModelState.AddModelError(string.Empty, response.Message);
+            }
+
+            model.Fields = _combosHelper.GetComboFields();
+            model.Districts = _combosHelper.GetComboDistricts(model.FieldId);
+            model.Churches = _combosHelper.GetComboChurches(model.DistrictId);
+            return View(model);
+        }
+
 
         public IActionResult Login()
         {

@@ -126,3 +126,6 @@ C:\Users\Joyner Garcia\Documents\Project\juankmazo2020\TallerWeb\TallerWeb.Web\o
 C:\Users\Joyner Garcia\Documents\Project\juankmazo2020\TallerWeb\TallerWeb.Web\obj\Debug\netcoreapp2.1\TallerWeb.Web.dll
 C:\Users\Joyner Garcia\Documents\Project\juankmazo2020\TallerWeb\TallerWeb.Web\obj\Debug\netcoreapp2.1\TallerWeb.Web.pdb
 C:\Users\Joyner Garcia\Documents\Project\juankmazo2020\TallerWeb\TallerWeb.Web\obj\Debug\netcoreapp2.1\TallerWeb.Web.genruntimeconfig.cache
+C:\Users\Joyner Garcia\Documents\Project\juankmazo2020\TallerWeb\TallerWeb.Web\obj\Debug\netcoreapp2.1\Razor\Views\Account\Index.cshtml.g.cs
+C:\Users\Joyner Garcia\Documents\Project\juankmazo2020\TallerWeb\TallerWeb.Web\obj\Debug\netcoreapp2.1\Razor\Views\Account\Create.cshtml.g.cs
+C:\Users\Joyner Garcia\Documents\Project\juankmazo2020\TallerWeb\TallerWeb.Web\obj\Debug\netcoreapp2.1\Razor\Views\Account\Index1.cshtml.g.cs
