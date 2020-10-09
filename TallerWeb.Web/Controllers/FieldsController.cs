@@ -154,6 +154,7 @@ namespace TallerWeb.Web.Controllers
             Field @field = await _context.Fields
                 .Include(c => c.Districts)
                 .ThenInclude(d => d.Churches)
+                .ThenInclude(f => f.Meetings)
                 .FirstOrDefaultAsync(m => m.Id == id);
             if (@field == null)
             {
@@ -282,6 +283,7 @@ namespace TallerWeb.Web.Controllers
 
             District district = await _context.Districts
                 .Include(d => d.Churches)//Cascade Eraser
+                .ThenInclude(f => f.Meetings)
                 .FirstOrDefaultAsync(m => m.Id == id);
             if (district == null)
             {
@@ -302,6 +304,7 @@ namespace TallerWeb.Web.Controllers
 
             District district = await _context.Districts
                 .Include(d => d.Churches)
+                .ThenInclude(f => f.Meetings)
                 .FirstOrDefaultAsync(m => m.Id == id);
             if (district == null)
             {
@@ -428,6 +431,7 @@ namespace TallerWeb.Web.Controllers
             }
 
             Church church = await _context.Churches
+                .Include(f => f.Meetings)
                 .FirstOrDefaultAsync(m => m.Id == id);
             if (church == null)
             {

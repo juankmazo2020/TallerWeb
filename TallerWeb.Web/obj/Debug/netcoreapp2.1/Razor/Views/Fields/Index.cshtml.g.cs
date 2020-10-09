@@ -70,7 +70,7 @@ using TallerWeb.Web.Models;
             WriteLiteral("\r\n\r\n<link rel=\"stylesheet\" href=\"https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css\" />\r\n<br />\r\n\r\n<p>\r\n    ");
             EndContext();
             BeginContext(218, 99, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "9e9068dfc26e4e7db62f55d6fea299d4", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "e777f6043b914ab39a672de1bd66eef1", async() => {
                 BeginContext(265, 48, true);
                 WriteLiteral("<i class=\"glyphicon glyphicon-plus\"></i> Add New");
                 EndContext();
@@ -157,7 +157,7 @@ using TallerWeb.Web.Models;
             WriteLiteral("\r\n                            </td>\r\n\r\n                            <td>\r\n                                ");
             EndContext();
             BeginContext(1633, 115, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "44d4a481f43542d1b0f3650a901d4df3", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "b254e28813eb4d61b604d6f5d8449f71", async() => {
                 BeginContext(1702, 42, true);
                 WriteLiteral("<i class=\"glyphicon glyphicon-pencil\"></i>");
                 EndContext();
@@ -193,7 +193,7 @@ using TallerWeb.Web.Models;
             WriteLiteral("\r\n                                ");
             EndContext();
             BeginContext(1782, 122, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "5b57f5c743a747eaa4978e4b5f185719", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "2dee4d9611f341f99ab17a0f247b8829", async() => {
                 BeginContext(1851, 49, true);
                 WriteLiteral("<i class=\"glyphicon glyphicon-align-justify\"></i>");
                 EndContext();
@@ -247,7 +247,7 @@ using TallerWeb.Web.Models;
             WriteLiteral("                    </tbody>\r\n                </table>\r\n            </div>\r\n        </div>\r\n    </div>\r\n</div>\r\n\r\n");
             EndContext();
             BeginContext(2306, 32, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("partial", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "40f4b4451b9b4fc88c27b19690d1136c", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("partial", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "4943f3f974ca4e39b152e66b753dc3ca", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_TagHelpers_PartialTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.TagHelpers.PartialTagHelper>();

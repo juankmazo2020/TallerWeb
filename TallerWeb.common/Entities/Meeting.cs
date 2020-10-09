@@ -1,12 +1,12 @@
 ﻿using Newtonsoft.Json;
-using System.Collections.Generic;
+using System;
 using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
 namespace TallerWeb.Common.Entities
 {
-    public class Church
+    public class Meeting
     {
         public int Id { get; set; }
 
@@ -14,16 +14,20 @@ namespace TallerWeb.Common.Entities
         [Required]
         public string Name { get; set; }
 
-        public ICollection<Meeting> Meetings { get; set; }
+        [DisplayFormat(DataFormatString = "{0:yyyy/MM/dd hh:mm}")]
+        public DateTime Date { get; set; }
 
-        [DisplayName("Meetings Number")]
-        public int MeetingsNumber => Meetings == null ? 0 : Meetings.Count;
+        [Display(Name = "Date")]
+        [DisplayFormat(DataFormatString = "{0:yyyy/MM/dd hh:mm}")]
+        public DateTime DateLocal => Date.ToLocalTime();
+
 
         [JsonIgnore]//When request is generated in Json, dont save change
         [NotMapped]//The Properity Will not save in database
-        public int IdDistrict { get; set; }//Knowing which district the church belongs to
+        public int IdChurch { get; set; }//Knowing which district the church belongs to
 
         [JsonIgnore]
-        public District District { get; set; }
+        public Church Church { get; set; }
+
     }
 }

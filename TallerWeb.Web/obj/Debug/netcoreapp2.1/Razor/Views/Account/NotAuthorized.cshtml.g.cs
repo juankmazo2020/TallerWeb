@@ -60,7 +60,7 @@ using TallerWeb.Web.Models;
             WriteLiteral("\r\n<br />\r\n<br />\r\n");
             EndContext();
             BeginContext(67, 36, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "8cea733756144f6d86aff0e79b0513e6", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "70b0f79e4bca4822afdbe4c675fe9ee8", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();

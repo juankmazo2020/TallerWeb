@@ -37,7 +37,7 @@ namespace TallerWeb.Web.Controllers
 
         }
 
-        [Authorize(Roles = "Admin")]
+        [Authorize(Roles = "Admin, Teacher")]
         public async Task<IActionResult> Index()
         {
             return View(await _context.Users

@@ -3,7 +3,6 @@ using System;
 using System.ComponentModel.DataAnnotations;
 using TallerWeb.Common.Entities;
 using TallerWeb.Common.Enums;
-
 namespace TallerWeb.Web.Data.Entities
 {
     public class User : IdentityUser

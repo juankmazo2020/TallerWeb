@@ -3,15 +3,17 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using TallerWeb.Web.Data;
 
 namespace TallerWeb.Web.Migrations
 {
     [DbContext(typeof(DataContext))]
-    partial class DataContextModelSnapshot : ModelSnapshot
+    [Migration("20201009032953_Meeting2")]
+    partial class Meeting2
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -201,6 +203,8 @@ namespace TallerWeb.Web.Migrations
 
                     b.Property<int?>("ChurchId");
 
+                    b.Property<int?>("ChurchId1");
+
                     b.Property<string>("DateTime");
 
                     b.Property<string>("Name")
@@ -210,6 +214,8 @@ namespace TallerWeb.Web.Migrations
                     b.HasKey("Id");
 
                     b.HasIndex("ChurchId");
+
+                    b.HasIndex("ChurchId1");
 
                     b.HasIndex("DateTime");
 
@@ -378,10 +384,13 @@ namespace TallerWeb.Web.Migrations
 
             modelBuilder.Entity("TallerWeb.Common.Entities.Meeting", b =>
                 {
-                    b.HasOne("TallerWeb.Common.Entities.Church", "Church")
+                    b.HasOne("TallerWeb.Common.Entities.Church")
                         .WithMany("Meetings")
-                        .HasForeignKey("ChurchId")
-                        .OnDelete(DeleteBehavior.Cascade);
+                        .HasForeignKey("ChurchId");
+
+                    b.HasOne("TallerWeb.Common.Entities.District", "Church")
+                        .WithMany()
+                        .HasForeignKey("ChurchId1");
                 });
 
             modelBuilder.Entity("TallerWeb.Web.Data.Entities.User", b =>
