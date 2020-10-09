@@ -14,11 +14,11 @@ namespace TallerWeb.Common.Entities
         [Required]
         public string Name { get; set; }
 
-        [DisplayFormat(DataFormatString = "{0:yyyy/MM/dd hh:mm}")]
+        [DisplayFormat(DataFormatString = "{0:yyyy/MM/dd dddd}")]
         public DateTime Date { get; set; }
 
         [Display(Name = "Date")]
-        [DisplayFormat(DataFormatString = "{0:yyyy/MM/dd hh:mm}")]
+        [DisplayFormat(DataFormatString = "0:yyyy/MM/dd dddd}")]
         public DateTime DateLocal => Date.ToLocalTime();
 
 

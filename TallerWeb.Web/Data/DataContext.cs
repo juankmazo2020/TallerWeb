@@ -43,8 +43,7 @@ namespace TallerWeb.Web.Data
 
             modelBuilder.Entity<Meeting>(met =>
             {
-                met.HasIndex("Name").IsUnique();
-                met.HasIndex("DateTime");
+                met.HasIndex("Name", "ChurchId").IsUnique();
                 met.HasOne(d => d.Church).WithMany(f => f.Meetings).OnDelete(DeleteBehavior.Cascade);
             });
 

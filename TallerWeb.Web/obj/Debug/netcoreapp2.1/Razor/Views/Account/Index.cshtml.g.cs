@@ -75,7 +75,7 @@ using TallerWeb.Web.Models;
             WriteLiteral("            ");
             EndContext();
             BeginContext(331, 103, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ff0dc2b905c84ebf96d87ca4d579ce9a", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "c5b5f27571684435a4eb9e79a7855880", async() => {
                 BeginContext(378, 52, true);
                 WriteLiteral("<i class=\"glyphicon glyphicon-plus\"></i> New Teacher");
                 EndContext();
@@ -115,7 +115,7 @@ using TallerWeb.Web.Models;
             WriteLiteral("            ");
             EndContext();
             BeginContext(543, 104, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "16f795276b184500969652b1663087eb", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "f9cda8adb9a54b88b17273c77574ef6b", async() => {
                 BeginContext(592, 51, true);
                 WriteLiteral("<i class=\"glyphicon glyphicon-plus\"></i> New Member");
                 EndContext();

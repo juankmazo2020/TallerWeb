@@ -201,7 +201,7 @@ namespace TallerWeb.Web.Migrations
 
                     b.Property<int?>("ChurchId");
 
-                    b.Property<string>("DateTime");
+                    b.Property<DateTime>("Date");
 
                     b.Property<string>("Name")
                         .IsRequired()
@@ -211,10 +211,9 @@ namespace TallerWeb.Web.Migrations
 
                     b.HasIndex("ChurchId");
 
-                    b.HasIndex("DateTime");
-
-                    b.HasIndex("Name")
-                        .IsUnique();
+                    b.HasIndex("Name", "ChurchId")
+                        .IsUnique()
+                        .HasFilter("[ChurchId] IS NOT NULL");
 
                     b.ToTable("Meetings");
                 });
