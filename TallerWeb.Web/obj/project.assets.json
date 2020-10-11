@@ -2964,6 +2964,15 @@
           "lib/netstandard1.3/Newtonsoft.Json.Bson.dll": {}
         }
       },
+      "NuGet.Build.Tasks.Pack/5.7.0": {
+        "type": "package",
+        "build": {
+          "build/NuGet.Build.Tasks.Pack.targets": {}
+        },
+        "buildMultiTargeting": {
+          "buildCrossTargeting/NuGet.Build.Tasks.Pack.targets": {}
+        }
+      },
       "NuGet.Frameworks/4.7.0": {
         "type": "package",
         "dependencies": {
@@ -8344,6 +8353,47 @@
         "newtonsoft.json.bson.nuspec"
       ]
     },
+    "NuGet.Build.Tasks.Pack/5.7.0": {
+      "sha512": "s78eR8eH+e9XsnySlnNLPWKoROXX2MZBRimptLs1RxAHs5lGThz54g5EBUdadKj+DJ6450mIgf0HdOlZBZpU2g==",
+      "type": "package",
+      "path": "nuget.build.tasks.pack/5.7.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "CoreCLR/NuGet.Build.Tasks.Pack.dll",
+        "CoreCLR/cs/NuGet.Build.Tasks.Pack.resources.dll",
+        "CoreCLR/de/NuGet.Build.Tasks.Pack.resources.dll",
+        "CoreCLR/es/NuGet.Build.Tasks.Pack.resources.dll",
+        "CoreCLR/fr/NuGet.Build.Tasks.Pack.resources.dll",
+        "CoreCLR/it/NuGet.Build.Tasks.Pack.resources.dll",
+        "CoreCLR/ja/NuGet.Build.Tasks.Pack.resources.dll",
+        "CoreCLR/ko/NuGet.Build.Tasks.Pack.resources.dll",
+        "CoreCLR/pl/NuGet.Build.Tasks.Pack.resources.dll",
+        "CoreCLR/pt-BR/NuGet.Build.Tasks.Pack.resources.dll",
+        "CoreCLR/ru/NuGet.Build.Tasks.Pack.resources.dll",
+        "CoreCLR/tr/NuGet.Build.Tasks.Pack.resources.dll",
+        "CoreCLR/zh-Hans/NuGet.Build.Tasks.Pack.resources.dll",
+        "CoreCLR/zh-Hant/NuGet.Build.Tasks.Pack.resources.dll",
+        "Desktop/NuGet.Build.Tasks.Pack.dll",
+        "Desktop/cs/NuGet.Build.Tasks.Pack.resources.dll",
+        "Desktop/de/NuGet.Build.Tasks.Pack.resources.dll",
+        "Desktop/es/NuGet.Build.Tasks.Pack.resources.dll",
+        "Desktop/fr/NuGet.Build.Tasks.Pack.resources.dll",
+        "Desktop/it/NuGet.Build.Tasks.Pack.resources.dll",
+        "Desktop/ja/NuGet.Build.Tasks.Pack.resources.dll",
+        "Desktop/ko/NuGet.Build.Tasks.Pack.resources.dll",
+        "Desktop/pl/NuGet.Build.Tasks.Pack.resources.dll",
+        "Desktop/pt-BR/NuGet.Build.Tasks.Pack.resources.dll",
+        "Desktop/ru/NuGet.Build.Tasks.Pack.resources.dll",
+        "Desktop/tr/NuGet.Build.Tasks.Pack.resources.dll",
+        "Desktop/zh-Hans/NuGet.Build.Tasks.Pack.resources.dll",
+        "Desktop/zh-Hant/NuGet.Build.Tasks.Pack.resources.dll",
+        "build/NuGet.Build.Tasks.Pack.targets",
+        "buildCrossTargeting/NuGet.Build.Tasks.Pack.targets",
+        "nuget.build.tasks.pack.5.7.0.nupkg.sha512",
+        "nuget.build.tasks.pack.nuspec"
+      ]
+    },
     "NuGet.Frameworks/4.7.0": {
       "sha512": "qbXaB76XYUVLocLBs8Z9TS/ERGK2wm797feO+0JEPFvT7o7MRadOR77mqaSD4J1k8G+DlZQyq+MlkCuxrkr3ag==",
       "type": "package",
@@ -13576,6 +13626,7 @@
       "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 2.1.10",
       "MimeKit >= 2.9.1",
       "Newtonsoft.Json >= 12.0.3",
+      "NuGet.Build.Tasks.Pack >= 5.7.0",
       "TallerWeb.Common >= 1.0.0",
       "WindowsAzure.Storage >= 9.3.3"
     ]
@@ -13698,6 +13749,12 @@
           "Newtonsoft.Json": {
             "target": "Package",
             "version": "[12.0.3, )"
+          },
+          "NuGet.Build.Tasks.Pack": {
+            "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+            "suppressParent": "All",
+            "target": "Package",
+            "version": "[5.7.0, )"
           },
           "WindowsAzure.Storage": {
             "target": "Package",

@@ -40,6 +40,7 @@
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": "2.1.10",
           "MimeKit": "2.9.1",
           "Newtonsoft.Json": "12.0.3",
+          "NuGet.Build.Tasks.Pack": "5.7.0",
           "TallerWeb.Common": "1.0.0",
           "WindowsAzure.Storage": "9.3.3"
         },
@@ -913,6 +914,7 @@
           "lib/netstandard2.0/Newtonsoft.Json.dll": {}
         }
       },
+      "NuGet.Build.Tasks.Pack/5.7.0": {},
       "NuGet.Frameworks/4.7.0": {
         "dependencies": {
           "NETStandard.Library": "2.0.3"
@@ -4330,6 +4332,13 @@
       "sha512": "sha512-6mgjfnRB4jKMlzHSl+VD+oUc1IebOZabkbyWj2RiTgWwYPPuaK1H97G1sHqGwPlS5npiF5Q0OrxN1wni2n5QWg==",
       "path": "newtonsoft.json/12.0.3",
       "hashPath": "newtonsoft.json.12.0.3.nupkg.sha512"
+    },
+    "NuGet.Build.Tasks.Pack/5.7.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-s78eR8eH+e9XsnySlnNLPWKoROXX2MZBRimptLs1RxAHs5lGThz54g5EBUdadKj+DJ6450mIgf0HdOlZBZpU2g==",
+      "path": "nuget.build.tasks.pack/5.7.0",
+      "hashPath": "nuget.build.tasks.pack.5.7.0.nupkg.sha512"
     },
     "NuGet.Frameworks/4.7.0": {
       "type": "package",

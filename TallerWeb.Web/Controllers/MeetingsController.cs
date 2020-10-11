@@ -58,9 +58,28 @@ namespace TallerWeb.Web.Controllers
         {
             if (ModelState.IsValid)
             {
-                _context.Add(meeting);
-                await _context.SaveChangesAsync();
-                return RedirectToAction(nameof(Index));
+                try
+                {
+                    _context.Add(meeting);
+                    await _context.SaveChangesAsync();
+                    return RedirectToAction(nameof(Index));
+                }
+                catch (DbUpdateException dbUpdateException)
+                {
+                    if (dbUpdateException.InnerException.Message.Contains("duplicate"))
+                    {
+                        ModelState.AddModelError(string.Empty, "There are a record with the same name.");
+                    }
+                    else
+                    {
+                        ModelState.AddModelError(string.Empty, dbUpdateException.InnerException.Message);
+                    }
+                }
+                catch (Exception exception)
+                {
+                    ModelState.AddModelError(string.Empty, exception.Message);
+                }
+
             }
             return View(meeting);
         }
@@ -100,18 +119,23 @@ namespace TallerWeb.Web.Controllers
                     _context.Update(meeting);
                     await _context.SaveChangesAsync();
                 }
-                catch (DbUpdateConcurrencyException)
+                catch (DbUpdateException dbUpdateException)
                 {
-                    if (!MeetingExists(meeting.Id))
+                    if (dbUpdateException.InnerException.Message.Contains("duplicate"))
                     {
-                        return NotFound();
+                        ModelState.AddModelError(string.Empty, "There are a record with the same name.");
                     }
                     else
                     {
-                        throw;
+                        ModelState.AddModelError(string.Empty, dbUpdateException.InnerException.Message);
                     }
                 }
-                return RedirectToAction(nameof(Index));
+                catch (Exception exception)
+                {
+                    ModelState.AddModelError(string.Empty, exception.Message);
+                }
+
+            return RedirectToAction(nameof(Index));
             }
             return View(meeting);
         }
@@ -131,15 +155,6 @@ namespace TallerWeb.Web.Controllers
                 return NotFound();
             }
 
-            return View(meeting);
-        }
-
-        // POST: Meetings/Delete/5
-        [HttpPost, ActionName("Delete")]
-        [ValidateAntiForgeryToken]
-        public async Task<IActionResult> DeleteConfirmed(int id)
-        {
-            var meeting = await _context.Meetings.FindAsync(id);
             _context.Meetings.Remove(meeting);
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));

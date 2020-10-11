@@ -119,7 +119,7 @@
                                                 @Html.DisplayFor(modelItem => item.Email)
                                             </td>
                                             <td>
-                                                @Html.DisplayFor(modelItem => item.Church.Id)
+                                                @Html.DisplayFor(modelItem => item.Church.Name)
                                             </td>
                                             <td>
                                                 @Html.DisplayFor(modelItem => item.Profession.Name)
@@ -144,7 +144,7 @@
         </div>
     </div>
 
-    @section Scripts {
+ @section Scripts {
         @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
         <script src="//cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
         <script src="/js/deleteDialog.js"></script>

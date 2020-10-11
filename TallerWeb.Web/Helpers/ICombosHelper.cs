@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc.Rendering;
 using System.Collections.Generic;
+using TallerWeb.Common.Entities;
 
 namespace TallerWeb.Web.Helpers
 {
@@ -9,6 +10,5 @@ namespace TallerWeb.Web.Helpers
         IEnumerable<SelectListItem> GetComboFields();
         IEnumerable<SelectListItem> GetComboDistricts(int fieldId);
         IEnumerable<SelectListItem> GetComboChurches(int districtId);
-
     }
 }

@@ -105,6 +105,5 @@ namespace TallerWeb.Web.Helpers
 
             return list;
         }
-
     }
 }

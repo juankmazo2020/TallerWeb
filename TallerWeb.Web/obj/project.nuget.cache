@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "WGCao57zHUX7VT91bIBlhEMDy8yqHQKhcfZZiawq99ITC5dcnd7nQfMd4sx533rJrxt5tn0mTSjt4oCar4cZVA==",
+  "dgSpecHash": "uK7MCsyiuqFmR8kp3uBqgYwK8SVHo216ntDutc8rLRCutvyc/oFRUBbQleUgbknRakl+HfNP6EDptQlL2wmpkw==",
   "success": true,
   "projectFilePath": "C:\\Users\\Joyner Garcia\\Documents\\Project\\juankmazo2020\\TallerWeb\\TallerWeb.Web\\TallerWeb.Web.csproj",
   "expectedPackageFiles": [
@@ -194,6 +194,7 @@
     "C:\\Users\\Joyner Garcia\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
     "C:\\Users\\Joyner Garcia\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512",
     "C:\\Users\\Joyner Garcia\\.nuget\\packages\\newtonsoft.json.bson\\1.0.1\\newtonsoft.json.bson.1.0.1.nupkg.sha512",
+    "C:\\Users\\Joyner Garcia\\.nuget\\packages\\nuget.build.tasks.pack\\5.7.0\\nuget.build.tasks.pack.5.7.0.nupkg.sha512",
     "C:\\Users\\Joyner Garcia\\.nuget\\packages\\nuget.frameworks\\4.7.0\\nuget.frameworks.4.7.0.nupkg.sha512",
     "C:\\Users\\Joyner Garcia\\.nuget\\packages\\portable.bouncycastle\\1.8.5\\portable.bouncycastle.1.8.5.nupkg.sha512",
     "C:\\Users\\Joyner Garcia\\.nuget\\packages\\remotion.linq\\2.2.0\\remotion.linq.2.2.0.nupkg.sha512",
