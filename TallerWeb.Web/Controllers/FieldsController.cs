@@ -5,11 +5,12 @@ using System;
 using System.Linq;
 using System.Threading.Tasks;
 using TallerWeb.Common.Entities;
+using TallerWeb.Web.Data.Entities;
 using TallerWeb.Web.Data;
 
 namespace TallerWeb.Web.Controllers
 {
-    [Authorize(Roles = "Admin")]
+    [Authorize(Roles = "Admin, Teacher")]
     public class FieldsController : Controller
     {
         private readonly DataContext _context;
@@ -27,8 +28,17 @@ namespace TallerWeb.Web.Controllers
                 .ToListAsync());
         }
 
-        // GET: Fields/Details/5
-        public async Task<IActionResult> Details(int? id)//Show details
+        [Authorize(Roles = "Teacher")]
+        public async Task<IActionResult> Index1(int? id)
+        {
+
+            return View(await _context.Churches
+                .Include(u => u.District)
+                .ToListAsync());
+        }
+
+            // GET: Fields/Details/5
+            public async Task<IActionResult> Details(int? id)//Show details
         {
             if (id == null)
             {
@@ -315,6 +325,47 @@ namespace TallerWeb.Web.Controllers
             district.IdField = field.Id;
             return View(district);
         }
+
+        public async Task<IActionResult> DetailsChurch(int? id)
+        {
+            if (id == null)
+            {
+                return NotFound();
+            }
+
+            Church church = await _context.Churches
+                .Include(f => f.Meetings)
+                .FirstOrDefaultAsync(m => m.Id == id);
+            if (church == null)
+            {
+                return NotFound();
+            }
+
+            District district = await _context.Districts.FirstOrDefaultAsync(c => c.Churches.FirstOrDefault(d => d.Id == church.Id) != null);
+            church.IdDistrict = district.Id;
+            return View(church);
+        }
+
+        public async Task<IActionResult> DetailsChurch1(int? id)
+        {
+            if (id == null)
+            {
+                return NotFound();
+            }
+
+            Church church = await _context.Churches
+                .Include(f => f.Meetings)
+                .FirstOrDefaultAsync(m => m.Id == id);
+            if (church == null)
+            {
+                return NotFound();
+            }
+
+            District district = await _context.Districts.FirstOrDefaultAsync(c => c.Churches.FirstOrDefault(d => d.Id == church.Id) != null);
+            church.IdDistrict = district.Id;
+            return View(church);
+        }
+
         public async Task<IActionResult> AddChurch(int? id)
         {
             if (id == null)
@@ -374,6 +425,136 @@ namespace TallerWeb.Web.Controllers
 
             return View(church);
         }
+
+        public async Task<IActionResult> AddMeeting(int? id)
+        {
+            if (id == null)
+            {
+                return NotFound();  
+            }
+
+            Church church = await _context.Churches.FindAsync(id);
+            if (church == null)
+            {
+                return NotFound();
+            }
+
+            Meeting model = new Meeting { IdChurch = church.Id };
+            return View(model);
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> AddMeeting(Meeting meeting)
+        {
+            if (ModelState.IsValid)
+            {
+                Church church = await _context.Churches
+                    .Include(d => d.Meetings)
+                    .FirstOrDefaultAsync(c => c.Id == meeting.IdChurch);
+                if (church == null)
+                {
+                    return NotFound();
+                }
+
+                try
+                {
+                    meeting.Id = 0;
+                    church.Meetings.Add(meeting);
+                    _context.Update(church);
+                    await _context.SaveChangesAsync();
+                    return RedirectToAction($"{nameof(DetailsChurch)}/{church.Id}");
+
+                }
+                catch (DbUpdateException dbUpdateException)
+                {
+                    if (dbUpdateException.InnerException.Message.Contains("duplicate"))
+                    {
+                        ModelState.AddModelError(string.Empty, "There are a record with the same name.");
+                    }
+                    else
+                    {
+                        ModelState.AddModelError(string.Empty, dbUpdateException.InnerException.Message);
+                    }
+                }
+                catch (Exception exception)
+                {
+                    ModelState.AddModelError(string.Empty, exception.Message);
+                }
+            }
+
+            return View(meeting);
+        }
+
+
+
+
+        public async Task<IActionResult> AddMeeting1(int? id)
+        {
+            if (id == null)
+            {
+                return NotFound();
+            }
+
+            Church church = await _context.Churches.FindAsync(id);
+            if (church == null)
+            {
+                return NotFound();
+            }
+
+            Meeting model = new Meeting { IdChurch = church.Id };
+            return View(model);
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> AddMeeting1(Meeting meeting)
+        {
+            if (ModelState.IsValid)
+            {
+                Church church = await _context.Churches
+                    .Include(d => d.Meetings)
+                    .FirstOrDefaultAsync(c => c.Id == meeting.IdChurch);
+                if (church == null)
+                {
+                    return NotFound();
+                }
+
+                try
+                {
+                    meeting.Id = 0;
+                    church.Meetings.Add(meeting);
+                    _context.Update(church);
+                    await _context.SaveChangesAsync();
+                    return RedirectToAction($"{nameof(Index1)}/{church.Id}");
+
+                }
+                catch (DbUpdateException dbUpdateException)
+                {
+                    if (dbUpdateException.InnerException.Message.Contains("duplicate"))
+                    {
+                        ModelState.AddModelError(string.Empty, "There are a record with the same name.");
+                    }
+                    else
+                    {
+                        ModelState.AddModelError(string.Empty, dbUpdateException.InnerException.Message);
+                    }
+                }
+                catch (Exception exception)
+                {
+                    ModelState.AddModelError(string.Empty, exception.Message);
+                }
+            }
+
+            return View(meeting);
+        }
+
+
+
+
+
+
+
         public async Task<IActionResult> EditChurch(int? id)
         {
             if (id == null)
@@ -423,6 +604,119 @@ namespace TallerWeb.Web.Controllers
             }
             return View(church);
         }
+
+
+        public async Task<IActionResult> EditMeeting(int? id)
+        {
+            if (id == null)
+            {
+                return NotFound();
+            }
+
+            Meeting meeting = await _context.Meetings.FindAsync(id);
+            if (meeting == null)
+            {
+                return NotFound();
+            }
+
+            Church church = await _context.Churches.FirstOrDefaultAsync(d => d.Meetings.FirstOrDefault(c => c.Id == meeting.Id) != null);
+            meeting.IdChurch = church.Id;
+            return View(meeting);
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> EditMeeting(Meeting meeting)
+        {
+            if (ModelState.IsValid)
+            {
+                try
+                {
+                    _context.Update(meeting);
+                    await _context.SaveChangesAsync();
+                    return RedirectToAction($"{nameof(DetailsChurch)}/{meeting.IdChurch}");
+
+                }
+                catch (DbUpdateException dbUpdateException)
+                {
+                    if (dbUpdateException.InnerException.Message.Contains("duplicate"))
+                    {
+                        ModelState.AddModelError(string.Empty, "There are a record with the same name.");
+                    }
+                    else
+                    {
+                        ModelState.AddModelError(string.Empty, dbUpdateException.InnerException.Message);
+                    }
+                }
+                catch (Exception exception)
+                {
+                    ModelState.AddModelError(string.Empty, exception.Message);
+                }
+            }
+            return View(meeting);
+        }
+
+
+
+
+
+        public async Task<IActionResult> EditMeeting1(int? id)
+        {
+            if (id == null)
+            {
+                return NotFound();
+            }
+
+            Meeting meeting = await _context.Meetings.FindAsync(id);
+            if (meeting == null)
+            {
+                return NotFound();
+            }
+
+            Church church = await _context.Churches.FirstOrDefaultAsync(d => d.Meetings.FirstOrDefault(c => c.Id == meeting.Id) != null);
+            meeting.IdChurch = church.Id;
+            return View(meeting);
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> EditMeeting1(Meeting meeting)
+        {
+            if (ModelState.IsValid)
+            {
+                try
+                {
+                    _context.Update(meeting);
+                    await _context.SaveChangesAsync();
+                    return RedirectToAction($"{nameof(DetailsChurch1)}/{meeting.IdChurch}");
+
+                }
+                catch (DbUpdateException dbUpdateException)
+                {
+                    if (dbUpdateException.InnerException.Message.Contains("duplicate"))
+                    {
+                        ModelState.AddModelError(string.Empty, "There are a record with the same name.");
+                    }
+                    else
+                    {
+                        ModelState.AddModelError(string.Empty, dbUpdateException.InnerException.Message);
+                    }
+                }
+                catch (Exception exception)
+                {
+                    ModelState.AddModelError(string.Empty, exception.Message);
+                }
+            }
+            return View(meeting);
+        }
+
+
+
+
+
+
+
+
         public async Task<IActionResult> DeleteChurch(int? id)
         {
             if (id == null)
@@ -442,6 +736,46 @@ namespace TallerWeb.Web.Controllers
             _context.Churches.Remove(church);
             await _context.SaveChangesAsync();
             return RedirectToAction($"{nameof(DetailsDistrict)}/{district.Id}");
+        }
+
+        public async Task<IActionResult> DeleteMeeting(int? id)
+        {
+            if (id == null)
+            {
+                return NotFound();
+            }
+
+            Meeting meeting = await _context.Meetings
+                .FirstOrDefaultAsync(m => m.Id == id);
+            if (meeting == null)
+            {
+                return NotFound();
+            }
+
+            Church church = await _context.Churches.FirstOrDefaultAsync(d => d.Meetings.FirstOrDefault(c => c.Id == meeting.Id) != null);
+            _context.Meetings.Remove(meeting);
+            await _context.SaveChangesAsync();
+            return RedirectToAction($"{nameof(DetailsChurch)}/{church.Id}");
+        }
+
+        public async Task<IActionResult> DeleteMeeting1(int? id)
+        {
+            if (id == null)
+            {
+                return NotFound();
+            }
+
+            Meeting meeting = await _context.Meetings
+                .FirstOrDefaultAsync(m => m.Id == id);
+            if (meeting == null)
+            {
+                return NotFound();
+            }
+
+            Church church = await _context.Churches.FirstOrDefaultAsync(d => d.Meetings.FirstOrDefault(c => c.Id == meeting.Id) != null);
+            _context.Meetings.Remove(meeting);
+            await _context.SaveChangesAsync();
+            return RedirectToAction($"{nameof(Index1)}/{church.Id}");
         }
     }
 }
