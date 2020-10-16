@@ -129,7 +129,46 @@ namespace TallerWeb.Web.Migrations
                     b.ToTable("AspNetUserTokens");
                 });
 
-            modelBuilder.Entity("TallerWeb.Common.Entities.Church", b =>
+            modelBuilder.Entity("TallerWeb.Common.Entities.Profession", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasMaxLength(70);
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("Name")
+                        .IsUnique();
+
+                    b.ToTable("Professions");
+                });
+
+            modelBuilder.Entity("TallerWeb.Web.Data.Entities.Assistance", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<bool>("IsPresent");
+
+                    b.Property<int?>("MeetingId");
+
+                    b.Property<string>("UserId");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("MeetingId");
+
+                    b.HasIndex("UserId");
+
+                    b.ToTable("Assistances");
+                });
+
+            modelBuilder.Entity("TallerWeb.Web.Data.Entities.Church", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -152,7 +191,7 @@ namespace TallerWeb.Web.Migrations
                     b.ToTable("Churches");
                 });
 
-            modelBuilder.Entity("TallerWeb.Common.Entities.District", b =>
+            modelBuilder.Entity("TallerWeb.Web.Data.Entities.District", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -175,7 +214,7 @@ namespace TallerWeb.Web.Migrations
                     b.ToTable("Districts");
                 });
 
-            modelBuilder.Entity("TallerWeb.Common.Entities.Field", b =>
+            modelBuilder.Entity("TallerWeb.Web.Data.Entities.Field", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -193,7 +232,7 @@ namespace TallerWeb.Web.Migrations
                     b.ToTable("Fields");
                 });
 
-            modelBuilder.Entity("TallerWeb.Common.Entities.Meeting", b =>
+            modelBuilder.Entity("TallerWeb.Web.Data.Entities.Meeting", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -216,24 +255,6 @@ namespace TallerWeb.Web.Migrations
                         .HasFilter("[ChurchId] IS NOT NULL");
 
                     b.ToTable("Meetings");
-                });
-
-            modelBuilder.Entity("TallerWeb.Common.Entities.Profession", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
-
-                    b.Property<string>("Name")
-                        .IsRequired()
-                        .HasMaxLength(70);
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("Name")
-                        .IsUnique();
-
-                    b.ToTable("Professions");
                 });
 
             modelBuilder.Entity("TallerWeb.Web.Data.Entities.User", b =>
@@ -359,25 +380,37 @@ namespace TallerWeb.Web.Migrations
                         .OnDelete(DeleteBehavior.Cascade);
                 });
 
-            modelBuilder.Entity("TallerWeb.Common.Entities.Church", b =>
+            modelBuilder.Entity("TallerWeb.Web.Data.Entities.Assistance", b =>
                 {
-                    b.HasOne("TallerWeb.Common.Entities.District", "District")
+                    b.HasOne("TallerWeb.Web.Data.Entities.Meeting", "Meeting")
+                        .WithMany("Assistances")
+                        .HasForeignKey("MeetingId")
+                        .OnDelete(DeleteBehavior.Cascade);
+
+                    b.HasOne("TallerWeb.Web.Data.Entities.User", "User")
+                        .WithMany("Assistances")
+                        .HasForeignKey("UserId");
+                });
+
+            modelBuilder.Entity("TallerWeb.Web.Data.Entities.Church", b =>
+                {
+                    b.HasOne("TallerWeb.Web.Data.Entities.District", "District")
                         .WithMany("Churches")
                         .HasForeignKey("DistrictId")
                         .OnDelete(DeleteBehavior.Cascade);
                 });
 
-            modelBuilder.Entity("TallerWeb.Common.Entities.District", b =>
+            modelBuilder.Entity("TallerWeb.Web.Data.Entities.District", b =>
                 {
-                    b.HasOne("TallerWeb.Common.Entities.Field", "Field")
+                    b.HasOne("TallerWeb.Web.Data.Entities.Field", "Field")
                         .WithMany("Districts")
                         .HasForeignKey("FieldId")
                         .OnDelete(DeleteBehavior.Cascade);
                 });
 
-            modelBuilder.Entity("TallerWeb.Common.Entities.Meeting", b =>
+            modelBuilder.Entity("TallerWeb.Web.Data.Entities.Meeting", b =>
                 {
-                    b.HasOne("TallerWeb.Common.Entities.Church", "Church")
+                    b.HasOne("TallerWeb.Web.Data.Entities.Church", "Church")
                         .WithMany("Meetings")
                         .HasForeignKey("ChurchId")
                         .OnDelete(DeleteBehavior.Cascade);
@@ -385,8 +418,8 @@ namespace TallerWeb.Web.Migrations
 
             modelBuilder.Entity("TallerWeb.Web.Data.Entities.User", b =>
                 {
-                    b.HasOne("TallerWeb.Common.Entities.Church", "Church")
-                        .WithMany()
+                    b.HasOne("TallerWeb.Web.Data.Entities.Church", "Church")
+                        .WithMany("Users")
                         .HasForeignKey("ChurchId");
 
                     b.HasOne("TallerWeb.Common.Entities.Profession", "Profession")

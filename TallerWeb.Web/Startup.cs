@@ -11,6 +11,7 @@ using System.Text;
 using TallerWeb.Web.Data;
 using TallerWeb.Web.Data.Entities;
 using TallerWeb.Web.Helpers;
+using Vereyon.Web;
 
 namespace TallerWeb.Web
 {
@@ -79,6 +80,7 @@ namespace TallerWeb.Web
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
             services.AddScoped<IUserHelper, UserHelper>();
             services.AddScoped<IMailHelper, MailHelper>();
+            services.AddFlashMessage();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

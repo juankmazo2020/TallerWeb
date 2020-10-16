@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using TallerWeb.Common.Entities;
 using TallerWeb.Web.Data;
+using TallerWeb.Web.Data.Entities;
 
 namespace TallerWeb.Web.Helpers
 {

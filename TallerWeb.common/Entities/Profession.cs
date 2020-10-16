@@ -1,4 +1,6 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 
 namespace TallerWeb.Common.Entities
 {
@@ -10,5 +12,9 @@ namespace TallerWeb.Common.Entities
         [Required]
         public string Name { get; set; }
 
+        public static IEnumerable<object> Data()
+        {
+            throw new NotImplementedException();
+        }
     }
 }

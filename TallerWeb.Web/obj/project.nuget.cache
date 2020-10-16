@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "uK7MCsyiuqFmR8kp3uBqgYwK8SVHo216ntDutc8rLRCutvyc/oFRUBbQleUgbknRakl+HfNP6EDptQlL2wmpkw==",
+  "dgSpecHash": "0zjCRaK+YNTARZ4JXU1n1ZfkGa5tEaQ59CNGrULVr0Bu/qROrhZYNxwzaxyiQo/hwhYEDQ/plklBizxq3IID9w==",
   "success": true,
   "projectFilePath": "C:\\Users\\Joyner Garcia\\Documents\\Project\\juankmazo2020\\TallerWeb\\TallerWeb.Web\\TallerWeb.Web.csproj",
   "expectedPackageFiles": [
@@ -103,6 +103,7 @@
     "C:\\Users\\Joyner Garcia\\.nuget\\packages\\microsoft.azure.keyvault\\2.3.2\\microsoft.azure.keyvault.2.3.2.nupkg.sha512",
     "C:\\Users\\Joyner Garcia\\.nuget\\packages\\microsoft.azure.keyvault.webkey\\2.0.7\\microsoft.azure.keyvault.webkey.2.0.7.nupkg.sha512",
     "C:\\Users\\Joyner Garcia\\.nuget\\packages\\microsoft.azure.services.appauthentication\\1.0.1\\microsoft.azure.services.appauthentication.1.0.1.nupkg.sha512",
+    "C:\\Users\\Joyner Garcia\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.0.0\\microsoft.bcl.asyncinterfaces.1.0.0.nupkg.sha512",
     "C:\\Users\\Joyner Garcia\\.nuget\\packages\\microsoft.codeanalysis.analyzers\\1.1.0\\microsoft.codeanalysis.analyzers.1.1.0.nupkg.sha512",
     "C:\\Users\\Joyner Garcia\\.nuget\\packages\\microsoft.codeanalysis.common\\2.8.0\\microsoft.codeanalysis.common.2.8.0.nupkg.sha512",
     "C:\\Users\\Joyner Garcia\\.nuget\\packages\\microsoft.codeanalysis.csharp\\2.8.0\\microsoft.codeanalysis.csharp.2.8.0.nupkg.sha512",
@@ -277,7 +278,7 @@
     "C:\\Users\\Joyner Garcia\\.nuget\\packages\\system.reflection.typeextensions\\4.4.0\\system.reflection.typeextensions.4.4.0.nupkg.sha512",
     "C:\\Users\\Joyner Garcia\\.nuget\\packages\\system.resources.resourcemanager\\4.3.0\\system.resources.resourcemanager.4.3.0.nupkg.sha512",
     "C:\\Users\\Joyner Garcia\\.nuget\\packages\\system.runtime\\4.3.0\\system.runtime.4.3.0.nupkg.sha512",
-    "C:\\Users\\Joyner Garcia\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\4.5.2\\system.runtime.compilerservices.unsafe.4.5.2.nupkg.sha512",
+    "C:\\Users\\Joyner Garcia\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\4.6.0\\system.runtime.compilerservices.unsafe.4.6.0.nupkg.sha512",
     "C:\\Users\\Joyner Garcia\\.nuget\\packages\\system.runtime.extensions\\4.3.0\\system.runtime.extensions.4.3.0.nupkg.sha512",
     "C:\\Users\\Joyner Garcia\\.nuget\\packages\\system.runtime.handles\\4.3.0\\system.runtime.handles.4.3.0.nupkg.sha512",
     "C:\\Users\\Joyner Garcia\\.nuget\\packages\\system.runtime.interopservices\\4.3.0\\system.runtime.interopservices.4.3.0.nupkg.sha512",
@@ -303,7 +304,8 @@
     "C:\\Users\\Joyner Garcia\\.nuget\\packages\\system.text.encoding\\4.3.0\\system.text.encoding.4.3.0.nupkg.sha512",
     "C:\\Users\\Joyner Garcia\\.nuget\\packages\\system.text.encoding.codepages\\4.5.0\\system.text.encoding.codepages.4.5.0.nupkg.sha512",
     "C:\\Users\\Joyner Garcia\\.nuget\\packages\\system.text.encoding.extensions\\4.3.0\\system.text.encoding.extensions.4.3.0.nupkg.sha512",
-    "C:\\Users\\Joyner Garcia\\.nuget\\packages\\system.text.encodings.web\\4.5.0\\system.text.encodings.web.4.5.0.nupkg.sha512",
+    "C:\\Users\\Joyner Garcia\\.nuget\\packages\\system.text.encodings.web\\4.6.0\\system.text.encodings.web.4.6.0.nupkg.sha512",
+    "C:\\Users\\Joyner Garcia\\.nuget\\packages\\system.text.json\\4.6.0\\system.text.json.4.6.0.nupkg.sha512",
     "C:\\Users\\Joyner Garcia\\.nuget\\packages\\system.text.regularexpressions\\4.3.0\\system.text.regularexpressions.4.3.0.nupkg.sha512",
     "C:\\Users\\Joyner Garcia\\.nuget\\packages\\system.threading\\4.3.0\\system.threading.4.3.0.nupkg.sha512",
     "C:\\Users\\Joyner Garcia\\.nuget\\packages\\system.threading.channels\\4.5.0\\system.threading.channels.4.5.0.nupkg.sha512",
@@ -319,6 +321,7 @@
     "C:\\Users\\Joyner Garcia\\.nuget\\packages\\system.xml.xmlserializer\\4.3.0\\system.xml.xmlserializer.4.3.0.nupkg.sha512",
     "C:\\Users\\Joyner Garcia\\.nuget\\packages\\system.xml.xpath\\4.3.0\\system.xml.xpath.4.3.0.nupkg.sha512",
     "C:\\Users\\Joyner Garcia\\.nuget\\packages\\system.xml.xpath.xdocument\\4.3.0\\system.xml.xpath.xdocument.4.3.0.nupkg.sha512",
+    "C:\\Users\\Joyner Garcia\\.nuget\\packages\\vereyon.web.flashmessage\\2.0.0\\vereyon.web.flashmessage.2.0.0.nupkg.sha512",
     "C:\\Users\\Joyner Garcia\\.nuget\\packages\\windowsazure.storage\\9.3.3\\windowsazure.storage.9.3.3.nupkg.sha512"
   ],
   "logs": []

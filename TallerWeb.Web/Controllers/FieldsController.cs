@@ -7,17 +7,20 @@ using System.Threading.Tasks;
 using TallerWeb.Common.Entities;
 using TallerWeb.Web.Data.Entities;
 using TallerWeb.Web.Data;
+using Vereyon.Web;
 
 namespace TallerWeb.Web.Controllers
 {
-    [Authorize(Roles = "Admin, Teacher")]
+    [Authorize(Roles = "Admin, Teacher, User")]
     public class FieldsController : Controller
     {
         private readonly DataContext _context;
+        private readonly IFlashMessage _flashMessage;
 
-        public FieldsController(DataContext context)
+        public FieldsController(DataContext context, IFlashMessage flashMessage)
         {
             _context = context;
+            _flashMessage = flashMessage;
         }
 
         // GET: Fields
@@ -37,8 +40,10 @@ namespace TallerWeb.Web.Controllers
                 .ToListAsync());
         }
 
-            // GET: Fields/Details/5
-            public async Task<IActionResult> Details(int? id)//Show details
+        [Authorize(Roles = "User")]
+
+        // GET: Fields/Details/5
+        public async Task<IActionResult> Details(int? id)//Show details
         {
             if (id == null)
             {
@@ -171,9 +176,20 @@ namespace TallerWeb.Web.Controllers
                 return NotFound();
             }
 
-            _context.Fields.Remove(@field);
-            await _context.SaveChangesAsync();
+            try
+            {
+
+                _context.Fields.Remove(@field);
+                await _context.SaveChangesAsync();
+                _flashMessage.Confirmation("The Field was deleted.");
+            }
+            catch
+            {
+                _flashMessage.Danger("The Field can't be deleted because it has related records.");
+            }
+
             return RedirectToAction(nameof(Index));
+
         }
 
         public async Task<IActionResult> AddDistrict(int? id)
@@ -303,6 +319,7 @@ namespace TallerWeb.Web.Controllers
             Field field = await _context.Fields.FirstOrDefaultAsync(c => c.Districts.FirstOrDefault(d => d.Id == district.Id) != null);
             _context.Districts.Remove(district);
             await _context.SaveChangesAsync();
+            _flashMessage.Confirmation("The District was deleted.");
             return RedirectToAction($"{nameof(Details)}/{field.Id}");
         }
         public async Task<IActionResult> DetailsDistrict(int? id)
@@ -732,10 +749,13 @@ namespace TallerWeb.Web.Controllers
                 return NotFound();
             }
 
+
             District district = await _context.Districts.FirstOrDefaultAsync(d => d.Churches.FirstOrDefault(c => c.Id == church.Id) != null);
             _context.Churches.Remove(church);
             await _context.SaveChangesAsync();
+            _flashMessage.Confirmation("The Church was deleted.");
             return RedirectToAction($"{nameof(DetailsDistrict)}/{district.Id}");
+
         }
 
         public async Task<IActionResult> DeleteMeeting(int? id)
@@ -752,10 +772,13 @@ namespace TallerWeb.Web.Controllers
                 return NotFound();
             }
 
+
             Church church = await _context.Churches.FirstOrDefaultAsync(d => d.Meetings.FirstOrDefault(c => c.Id == meeting.Id) != null);
             _context.Meetings.Remove(meeting);
             await _context.SaveChangesAsync();
+            _flashMessage.Confirmation("The Meeting was deleted.");
             return RedirectToAction($"{nameof(DetailsChurch)}/{church.Id}");
+
         }
 
         public async Task<IActionResult> DeleteMeeting1(int? id)
@@ -775,6 +798,7 @@ namespace TallerWeb.Web.Controllers
             Church church = await _context.Churches.FirstOrDefaultAsync(d => d.Meetings.FirstOrDefault(c => c.Id == meeting.Id) != null);
             _context.Meetings.Remove(meeting);
             await _context.SaveChangesAsync();
+            _flashMessage.Confirmation("The Meeting was deleted.");
             return RedirectToAction($"{nameof(Index1)}/{church.Id}");
         }
     }

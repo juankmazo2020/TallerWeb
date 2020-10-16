@@ -17,7 +17,7 @@ namespace TallerWeb.Web.Data
         public DbSet<Field> Fields { get; set; }//Properity
         public DbSet<Meeting> Meetings { get; set; }//Properity
         public DbSet<Profession> Professions { get; set; }//Properity
-
+        public DbSet<Assistance> Assistances { get; set; }//Properity
 
         protected override void OnModelCreating(ModelBuilder modelBuilder) //Create Index to eliminate field with same name
         {
@@ -53,6 +53,11 @@ namespace TallerWeb.Web.Data
 
             });
 
+           modelBuilder.Entity<Assistance>(Asi =>
+           {
+                    Asi.HasKey(i => i.Id);
+                    Asi.HasOne(d => d.Meeting).WithMany(f => f.Assistances).OnDelete(DeleteBehavior.Cascade);
+           });
 
         }
     }

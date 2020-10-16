@@ -1,8 +1,10 @@
 ﻿using Microsoft.AspNetCore.Identity;
 using System;
+using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using TallerWeb.Common.Entities;
 using TallerWeb.Common.Enums;
+
 namespace TallerWeb.Web.Data.Entities
 {
     public class User : IdentityUser
@@ -37,6 +39,7 @@ namespace TallerWeb.Web.Data.Entities
         public UserType UserType { get; set; }
 
         public Church Church { get; set; }
+        public ICollection<Assistance> Assistances { get; set; }
 
         public Profession Profession { get; set; }
 
