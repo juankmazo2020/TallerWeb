@@ -8,6 +8,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
+using TallerWeb.Common.Services;
 using TallerWeb.Web.Data;
 using TallerWeb.Web.Data.Entities;
 using TallerWeb.Web.Helpers;
@@ -80,6 +81,7 @@ namespace TallerWeb.Web
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
             services.AddScoped<IUserHelper, UserHelper>();
             services.AddScoped<IMailHelper, MailHelper>();
+            services.AddScoped<IApiService, ApiService>();
             services.AddFlashMessage();
         }
 

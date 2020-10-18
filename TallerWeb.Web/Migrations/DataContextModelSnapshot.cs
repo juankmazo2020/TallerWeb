@@ -412,8 +412,7 @@ namespace TallerWeb.Web.Migrations
                 {
                     b.HasOne("TallerWeb.Web.Data.Entities.Church", "Church")
                         .WithMany("Meetings")
-                        .HasForeignKey("ChurchId")
-                        .OnDelete(DeleteBehavior.Cascade);
+                        .HasForeignKey("ChurchId");
                 });
 
             modelBuilder.Entity("TallerWeb.Web.Data.Entities.User", b =>

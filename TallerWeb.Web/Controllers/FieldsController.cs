@@ -4,23 +4,25 @@ using Microsoft.EntityFrameworkCore;
 using System;
 using System.Linq;
 using System.Threading.Tasks;
-using TallerWeb.Common.Entities;
-using TallerWeb.Web.Data.Entities;
 using TallerWeb.Web.Data;
+using TallerWeb.Web.Data.Entities;
+using TallerWeb.Web.Helpers;
 using Vereyon.Web;
 
 namespace TallerWeb.Web.Controllers
 {
-    [Authorize(Roles = "Admin, Teacher, User")]
+    [Authorize(Roles = "Admin, Teacher")]
     public class FieldsController : Controller
     {
         private readonly DataContext _context;
         private readonly IFlashMessage _flashMessage;
+        private readonly IUserHelper _userHelper;
 
-        public FieldsController(DataContext context, IFlashMessage flashMessage)
+        public FieldsController(DataContext context, IFlashMessage flashMessage, IUserHelper userHelper)
         {
             _context = context;
             _flashMessage = flashMessage;
+            _userHelper = userHelper;
         }
 
         // GET: Fields
@@ -35,12 +37,29 @@ namespace TallerWeb.Web.Controllers
         public async Task<IActionResult> Index1(int? id)
         {
 
+            User user = await _userHelper.GetUserAsync(User.Identity.Name);
+            if (user == null)
+            {
+                return NotFound();
+            }
+            District district = await _context.Districts.FirstOrDefaultAsync(d => d.Churches.FirstOrDefault(c => c.Id == user.Church.Id) != null);
+            if (district == null)
+            {
+                district = await _context.Districts.FirstOrDefaultAsync();
+            }
+
+            Field field = await _context.Fields.FirstOrDefaultAsync(c => c.Districts.FirstOrDefault(d => d.Id == district.Id) != null);
+            if (field == null)
+            {
+                field = await _context.Fields.FirstOrDefaultAsync();
+            }
+
+            ViewData["ChurchId"] = user.Church.Id;
+
             return View(await _context.Churches
                 .Include(u => u.District)
                 .ToListAsync());
         }
-
-        [Authorize(Roles = "User")]
 
         // GET: Fields/Details/5
         public async Task<IActionResult> Details(int? id)//Show details
@@ -343,6 +362,95 @@ namespace TallerWeb.Web.Controllers
             return View(district);
         }
 
+
+
+
+
+
+        /*public async Task<IActionResult> DetailsMeeting(int? id)
+        {
+            if (id == null)
+            {
+                return NotFound();
+            }
+
+            Meeting meeting = await _context.Meetings.FindAsync(id);
+            if (meeting == null)
+            {
+                return NotFound();
+            }
+
+            Assistance model = new Assistance { IdMeeting = meeting.Id };
+
+            return View(model);
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> DetailsMeeting(Assistance assistance)
+        {
+            if (ModelState.IsValid)
+            {
+               Meeting meeting = await _context.Meetings
+                    .Include(d => d.Assistances)
+                    .ThenInclude(e => e.User)
+                    .FirstOrDefaultAsync(c => c.Id == assistance.IdMeeting);
+
+                if (meeting == null)
+                {
+                    return NotFound();
+                }
+
+                try
+                {
+                    assistance.Id = 0;
+                    meeting.Assistances.Add(assistance);
+                    _context.Update(meeting);
+                    await _context.SaveChangesAsync();
+                    return RedirectToAction($"{nameof(DetailsChurch1)}/{meeting.Church.Id}");
+
+                }
+                catch (DbUpdateException dbUpdateException)
+                {
+                    if (dbUpdateException.InnerException.Message.Contains("duplicate"))
+                    {
+                        ModelState.AddModelError(string.Empty, "There are a record with the same name.");
+                    }
+                    else
+                    {
+                        ModelState.AddModelError(string.Empty, dbUpdateException.InnerException.Message);
+                    }
+                }
+                catch (Exception exception)
+                {
+                    ModelState.AddModelError(string.Empty, exception.Message);
+                }
+            }
+
+            return View(assistance);
+        }*/
+
+        public async Task<IActionResult> DetailsMeeting(int? id)
+        {
+            if (id == null)
+            {
+                return NotFound();
+            }
+
+            Meeting meeting = await _context.Meetings
+                .Include(f => f.Assistances)
+                .ThenInclude(w => w.User)
+                .FirstOrDefaultAsync(m => m.Id == id);
+            if (meeting == null)
+            {
+                return NotFound();
+            }
+
+            Church church = await _context.Churches.FirstOrDefaultAsync(c => c.Meetings.FirstOrDefault(d => d.Id == meeting.Id) != null);
+            meeting.IdChurch = church.Id;
+            return View(meeting);
+        }
+
         public async Task<IActionResult> DetailsChurch(int? id)
         {
             if (id == null)
@@ -447,7 +555,7 @@ namespace TallerWeb.Web.Controllers
         {
             if (id == null)
             {
-                return NotFound();  
+                return NotFound();
             }
 
             Church church = await _context.Churches.FindAsync(id);
@@ -503,9 +611,6 @@ namespace TallerWeb.Web.Controllers
             return View(meeting);
         }
 
-
-
-
         public async Task<IActionResult> AddMeeting1(int? id)
         {
             if (id == null)
@@ -543,7 +648,7 @@ namespace TallerWeb.Web.Controllers
                     church.Meetings.Add(meeting);
                     _context.Update(church);
                     await _context.SaveChangesAsync();
-                    return RedirectToAction($"{nameof(Index1)}/{church.Id}");
+                    return RedirectToAction($"{nameof(DetailsChurch1)}/{church.Id}");
 
                 }
                 catch (DbUpdateException dbUpdateException)
@@ -565,12 +670,6 @@ namespace TallerWeb.Web.Controllers
 
             return View(meeting);
         }
-
-
-
-
-
-
 
         public async Task<IActionResult> EditChurch(int? id)
         {

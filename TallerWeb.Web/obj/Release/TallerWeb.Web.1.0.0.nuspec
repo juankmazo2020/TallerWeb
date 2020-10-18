@@ -1,0 +1,264 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>TallerWeb.Web</id>
+    <version>1.0.0</version>
+    <authors>TallerWeb.Web</authors>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Package Description</description>
+    <dependencies>
+      <group targetFramework=".NETCoreApp2.1">
+        <dependency id="TallerWeb.Common" version="1.0.0" exclude="Build,Analyzers" />
+        <dependency id="MailKit" version="2.8.0" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.AspNetCore" version="2.1.7" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.AspNetCore.AzureKeyVault.HostingStartup" version="2.0.4" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.AspNetCore.Mvc" version="2.1.3" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.AspNetCore.StaticFiles" version="2.1.1" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.EntityFrameworkCore.Design" version="2.1.14" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.EntityFrameworkCore.SqlServer" version="2.1.14" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.Extensions.Logging.Debug" version="2.1.1" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.VisualStudio.Web.BrowserLink" version="2.1.1" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.VisualStudio.Web.CodeGeneration.Design" version="2.1.10" exclude="Build,Analyzers" />
+        <dependency id="MimeKit" version="2.9.1" exclude="Build,Analyzers" />
+        <dependency id="Newtonsoft.Json" version="12.0.3" exclude="Build,Analyzers" />
+        <dependency id="Vereyon.Web.FlashMessage" version="2.0.0" exclude="Build,Analyzers" />
+        <dependency id="WindowsAzure.Storage" version="9.3.3" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+    <contentFiles>
+      <files include="any/netcoreapp2.1/wwwroot/css/site.css" buildAction="Content" />
+      <files include="any/netcoreapp2.1/wwwroot/css/site.min.css" buildAction="Content" />
+      <files include="any/netcoreapp2.1/wwwroot/favicon.ico" buildAction="Content" />
+      <files include="any/netcoreapp2.1/wwwroot/images/Ambrosio.jpg" buildAction="Content" />
+      <files include="any/netcoreapp2.1/wwwroot/images/Andres.jpg" buildAction="Content" />
+      <files include="any/netcoreapp2.1/wwwroot/images/banner1.svg" buildAction="Content" />
+      <files include="any/netcoreapp2.1/wwwroot/images/banner2.svg" buildAction="Content" />
+      <files include="any/netcoreapp2.1/wwwroot/images/banner3.svg" buildAction="Content" />
+      <files include="any/netcoreapp2.1/wwwroot/images/Carlos.jpg" buildAction="Content" />
+      <files include="any/netcoreapp2.1/wwwroot/images/Carmen.jpg" buildAction="Content" />
+      <files include="any/netcoreapp2.1/wwwroot/images/Daniel.jpg" buildAction="Content" />
+      <files include="any/netcoreapp2.1/wwwroot/images/Dixon.jpg" buildAction="Content" />
+      <files include="any/netcoreapp2.1/wwwroot/images/Edwart.jpg" buildAction="Content" />
+      <files include="any/netcoreapp2.1/wwwroot/images/Eliecer.jpg" buildAction="Content" />
+      <files include="any/netcoreapp2.1/wwwroot/images/Error_Web.jpg" buildAction="Content" />
+      <files include="any/netcoreapp2.1/wwwroot/images/Esmeralda.jpg" buildAction="Content" />
+      <files include="any/netcoreapp2.1/wwwroot/images/Estela.jpg" buildAction="Content" />
+      <files include="any/netcoreapp2.1/wwwroot/images/Freddy.jpg" buildAction="Content" />
+      <files include="any/netcoreapp2.1/wwwroot/images/Gimena.jpg" buildAction="Content" />
+      <files include="any/netcoreapp2.1/wwwroot/images/Gisselle.jpg" buildAction="Content" />
+      <files include="any/netcoreapp2.1/wwwroot/images/Jeison.jpg" buildAction="Content" />
+      <files include="any/netcoreapp2.1/wwwroot/images/Josue.jpg" buildAction="Content" />
+      <files include="any/netcoreapp2.1/wwwroot/images/Kevin.jpg" buildAction="Content" />
+      <files include="any/netcoreapp2.1/wwwroot/images/Keyla.jpg" buildAction="Content" />
+      <files include="any/netcoreapp2.1/wwwroot/images/Lidybeth.jpg" buildAction="Content" />
+      <files include="any/netcoreapp2.1/wwwroot/images/Maira.jpg" buildAction="Content" />
+      <files include="any/netcoreapp2.1/wwwroot/images/No_image.png" buildAction="Content" />
+      <files include="any/netcoreapp2.1/wwwroot/images/Pedro.jpg" buildAction="Content" />
+      <files include="any/netcoreapp2.1/wwwroot/images/Priscila.jpg" buildAction="Content" />
+      <files include="any/netcoreapp2.1/wwwroot/images/Robet.jpg" buildAction="Content" />
+      <files include="any/netcoreapp2.1/wwwroot/images/Rut.jpg" buildAction="Content" />
+      <files include="any/netcoreapp2.1/wwwroot/images/Sansa.jpg" buildAction="Content" />
+      <files include="any/netcoreapp2.1/wwwroot/images/Sara.jpg" buildAction="Content" />
+      <files include="any/netcoreapp2.1/wwwroot/images/Selena.jpg" buildAction="Content" />
+      <files include="any/netcoreapp2.1/wwwroot/images/Steve.jpg" buildAction="Content" />
+      <files include="any/netcoreapp2.1/wwwroot/images/Sugey.jpg" buildAction="Content" />
+      <files include="any/netcoreapp2.1/wwwroot/images/Wilmer.jpg" buildAction="Content" />
+      <files include="any/netcoreapp2.1/wwwroot/images/Yurley.jpg" buildAction="Content" />
+      <files include="any/netcoreapp2.1/wwwroot/js/deleteDialog.js" buildAction="Content" />
+      <files include="any/netcoreapp2.1/wwwroot/js/site.js" buildAction="Content" />
+      <files include="any/netcoreapp2.1/wwwroot/js/site.min.js" buildAction="Content" />
+      <files include="any/netcoreapp2.1/wwwroot/lib/bootstrap/.bower.json" buildAction="Content" />
+      <files include="any/netcoreapp2.1/wwwroot/lib/bootstrap/dist/css/bootstrap-theme.css" buildAction="Content" />
+      <files include="any/netcoreapp2.1/wwwroot/lib/bootstrap/dist/css/bootstrap-theme.css.map" buildAction="Content" />
+      <files include="any/netcoreapp2.1/wwwroot/lib/bootstrap/dist/css/bootstrap-theme.min.css" buildAction="Content" />
+      <files include="any/netcoreapp2.1/wwwroot/lib/bootstrap/dist/css/bootstrap-theme.min.css.map" buildAction="Content" />
+      <files include="any/netcoreapp2.1/wwwroot/lib/bootstrap/dist/css/bootstrap.css" buildAction="Content" />
+      <files include="any/netcoreapp2.1/wwwroot/lib/bootstrap/dist/css/bootstrap.css.map" buildAction="Content" />
+      <files include="any/netcoreapp2.1/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css" buildAction="Content" />
+      <files include="any/netcoreapp2.1/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css.map" buildAction="Content" />
+      <files include="any/netcoreapp2.1/wwwroot/lib/bootstrap/dist/fonts/glyphicons-halflings-regular.eot" buildAction="Content" />
+      <files include="any/netcoreapp2.1/wwwroot/lib/bootstrap/dist/fonts/glyphicons-halflings-regular.svg" buildAction="Content" />
+      <files include="any/netcoreapp2.1/wwwroot/lib/bootstrap/dist/fonts/glyphicons-halflings-regular.ttf" buildAction="Content" />
+      <files include="any/netcoreapp2.1/wwwroot/lib/bootstrap/dist/fonts/glyphicons-halflings-regular.woff" buildAction="Content" />
+      <files include="any/netcoreapp2.1/wwwroot/lib/bootstrap/dist/fonts/glyphicons-halflings-regular.woff2" buildAction="Content" />
+      <files include="any/netcoreapp2.1/wwwroot/lib/bootstrap/dist/js/bootstrap.js" buildAction="Content" />
+      <files include="any/netcoreapp2.1/wwwroot/lib/bootstrap/dist/js/bootstrap.min.js" buildAction="Content" />
+      <files include="any/netcoreapp2.1/wwwroot/lib/bootstrap/dist/js/npm.js" buildAction="Content" />
+      <files include="any/netcoreapp2.1/wwwroot/lib/bootstrap/LICENSE" buildAction="Content" />
+      <files include="any/netcoreapp2.1/wwwroot/lib/jquery-validation-unobtrusive/.bower.json" buildAction="Content" />
+      <files include="any/netcoreapp2.1/wwwroot/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js" buildAction="Content" />
+      <files include="any/netcoreapp2.1/wwwroot/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js" buildAction="Content" />
+      <files include="any/netcoreapp2.1/wwwroot/lib/jquery-validation-unobtrusive/LICENSE.txt" buildAction="Content" />
+      <files include="any/netcoreapp2.1/wwwroot/lib/jquery-validation/.bower.json" buildAction="Content" />
+      <files include="any/netcoreapp2.1/wwwroot/lib/jquery-validation/dist/additional-methods.js" buildAction="Content" />
+      <files include="any/netcoreapp2.1/wwwroot/lib/jquery-validation/dist/additional-methods.min.js" buildAction="Content" />
+      <files include="any/netcoreapp2.1/wwwroot/lib/jquery-validation/dist/jquery.validate.js" buildAction="Content" />
+      <files include="any/netcoreapp2.1/wwwroot/lib/jquery-validation/dist/jquery.validate.min.js" buildAction="Content" />
+      <files include="any/netcoreapp2.1/wwwroot/lib/jquery-validation/LICENSE.md" buildAction="Content" />
+      <files include="any/netcoreapp2.1/wwwroot/lib/jquery/.bower.json" buildAction="Content" />
+      <files include="any/netcoreapp2.1/wwwroot/lib/jquery/dist/jquery.js" buildAction="Content" />
+      <files include="any/netcoreapp2.1/wwwroot/lib/jquery/dist/jquery.min.js" buildAction="Content" />
+      <files include="any/netcoreapp2.1/wwwroot/lib/jquery/dist/jquery.min.map" buildAction="Content" />
+      <files include="any/netcoreapp2.1/wwwroot/lib/jquery/LICENSE.txt" buildAction="Content" />
+      <files include="any/netcoreapp2.1/appsettings.Development.json" buildAction="Content" />
+      <files include="any/netcoreapp2.1/appsettings.json" buildAction="Content" />
+    </contentFiles>
+  </metadata>
+  <files>
+    <file src="C:\Users\Joyner Garcia\Documents\Project\juankmazo2020\TallerWeb\TallerWeb.Web\bin\Release\netcoreapp2.1\TallerWeb.Web.Views.dll" target="lib\netcoreapp2.1\TallerWeb.Web.Views.dll" />
+    <file src="C:\Users\Joyner Garcia\Documents\Project\juankmazo2020\TallerWeb\TallerWeb.Web\bin\Release\netcoreapp2.1\TallerWeb.Web.runtimeconfig.json" target="lib\netcoreapp2.1\TallerWeb.Web.runtimeconfig.json" />
+    <file src="C:\Users\Joyner Garcia\Documents\Project\juankmazo2020\TallerWeb\TallerWeb.Web\bin\Release\netcoreapp2.1\TallerWeb.Web.dll" target="lib\netcoreapp2.1\TallerWeb.Web.dll" />
+    <file src="C:\Users\Joyner Garcia\Documents\Project\juankmazo2020\TallerWeb\TallerWeb.Web\wwwroot\css\site.css" target="content\wwwroot\css\site.css" />
+    <file src="C:\Users\Joyner Garcia\Documents\Project\juankmazo2020\TallerWeb\TallerWeb.Web\wwwroot\css\site.css" target="contentFiles\any\netcoreapp2.1\wwwroot\css\site.css" />
+    <file src="C:\Users\Joyner Garcia\Documents\Project\juankmazo2020\TallerWeb\TallerWeb.Web\wwwroot\css\site.min.css" target="content\wwwroot\css\site.min.css" />
+    <file src="C:\Users\Joyner Garcia\Documents\Project\juankmazo2020\TallerWeb\TallerWeb.Web\wwwroot\css\site.min.css" target="contentFiles\any\netcoreapp2.1\wwwroot\css\site.min.css" />
+    <file src="C:\Users\Joyner Garcia\Documents\Project\juankmazo2020\TallerWeb\TallerWeb.Web\wwwroot\favicon.ico" target="content\wwwroot\favicon.ico" />
+    <file src="C:\Users\Joyner Garcia\Documents\Project\juankmazo2020\TallerWeb\TallerWeb.Web\wwwroot\favicon.ico" target="contentFiles\any\netcoreapp2.1\wwwroot\favicon.ico" />
+    <file src="C:\Users\Joyner Garcia\Documents\Project\juankmazo2020\TallerWeb\TallerWeb.Web\wwwroot\images\Ambrosio.jpg" target="content\wwwroot\images\Ambrosio.jpg" />
+    <file src="C:\Users\Joyner Garcia\Documents\Project\juankmazo2020\TallerWeb\TallerWeb.Web\wwwroot\images\Ambrosio.jpg" target="contentFiles\any\netcoreapp2.1\wwwroot\images\Ambrosio.jpg" />
+    <file src="C:\Users\Joyner Garcia\Documents\Project\juankmazo2020\TallerWeb\TallerWeb.Web\wwwroot\images\Andres.jpg" target="content\wwwroot\images\Andres.jpg" />
+    <file src="C:\Users\Joyner Garcia\Documents\Project\juankmazo2020\TallerWeb\TallerWeb.Web\wwwroot\images\Andres.jpg" target="contentFiles\any\netcoreapp2.1\wwwroot\images\Andres.jpg" />
+    <file src="C:\Users\Joyner Garcia\Documents\Project\juankmazo2020\TallerWeb\TallerWeb.Web\wwwroot\images\banner1.svg" target="content\wwwroot\images\banner1.svg" />
+    <file src="C:\Users\Joyner Garcia\Documents\Project\juankmazo2020\TallerWeb\TallerWeb.Web\wwwroot\images\banner1.svg" target="contentFiles\any\netcoreapp2.1\wwwroot\images\banner1.svg" />
+    <file src="C:\Users\Joyner Garcia\Documents\Project\juankmazo2020\TallerWeb\TallerWeb.Web\wwwroot\images\banner2.svg" target="content\wwwroot\images\banner2.svg" />
+    <file src="C:\Users\Joyner Garcia\Documents\Project\juankmazo2020\TallerWeb\TallerWeb.Web\wwwroot\images\banner2.svg" target="contentFiles\any\netcoreapp2.1\wwwroot\images\banner2.svg" />
+    <file src="C:\Users\Joyner Garcia\Documents\Project\juankmazo2020\TallerWeb\TallerWeb.Web\wwwroot\images\banner3.svg" target="content\wwwroot\images\banner3.svg" />
+    <file src="C:\Users\Joyner Garcia\Documents\Project\juankmazo2020\TallerWeb\TallerWeb.Web\wwwroot\images\banner3.svg" target="contentFiles\any\netcoreapp2.1\wwwroot\images\banner3.svg" />
+    <file src="C:\Users\Joyner Garcia\Documents\Project\juankmazo2020\TallerWeb\TallerWeb.Web\wwwroot\images\Carlos.jpg" target="content\wwwroot\images\Carlos.jpg" />
+    <file src="C:\Users\Joyner Garcia\Documents\Project\juankmazo2020\TallerWeb\TallerWeb.Web\wwwroot\images\Carlos.jpg" target="contentFiles\any\netcoreapp2.1\wwwroot\images\Carlos.jpg" />
+    <file src="C:\Users\Joyner Garcia\Documents\Project\juankmazo2020\TallerWeb\TallerWeb.Web\wwwroot\images\Carmen.jpg" target="content\wwwroot\images\Carmen.jpg" />
+    <file src="C:\Users\Joyner Garcia\Documents\Project\juankmazo2020\TallerWeb\TallerWeb.Web\wwwroot\images\Carmen.jpg" target="contentFiles\any\netcoreapp2.1\wwwroot\images\Carmen.jpg" />
+    <file src="C:\Users\Joyner Garcia\Documents\Project\juankmazo2020\TallerWeb\TallerWeb.Web\wwwroot\images\Daniel.jpg" target="content\wwwroot\images\Daniel.jpg" />
+    <file src="C:\Users\Joyner Garcia\Documents\Project\juankmazo2020\TallerWeb\TallerWeb.Web\wwwroot\images\Daniel.jpg" target="contentFiles\any\netcoreapp2.1\wwwroot\images\Daniel.jpg" />
+    <file src="C:\Users\Joyner Garcia\Documents\Project\juankmazo2020\TallerWeb\TallerWeb.Web\wwwroot\images\Dixon.jpg" target="content\wwwroot\images\Dixon.jpg" />
+    <file src="C:\Users\Joyner Garcia\Documents\Project\juankmazo2020\TallerWeb\TallerWeb.Web\wwwroot\images\Dixon.jpg" target="contentFiles\any\netcoreapp2.1\wwwroot\images\Dixon.jpg" />
+    <file src="C:\Users\Joyner Garcia\Documents\Project\juankmazo2020\TallerWeb\TallerWeb.Web\wwwroot\images\Edwart.jpg" target="content\wwwroot\images\Edwart.jpg" />
+    <file src="C:\Users\Joyner Garcia\Documents\Project\juankmazo2020\TallerWeb\TallerWeb.Web\wwwroot\images\Edwart.jpg" target="contentFiles\any\netcoreapp2.1\wwwroot\images\Edwart.jpg" />
+    <file src="C:\Users\Joyner Garcia\Documents\Project\juankmazo2020\TallerWeb\TallerWeb.Web\wwwroot\images\Eliecer.jpg" target="content\wwwroot\images\Eliecer.jpg" />
+    <file src="C:\Users\Joyner Garcia\Documents\Project\juankmazo2020\TallerWeb\TallerWeb.Web\wwwroot\images\Eliecer.jpg" target="contentFiles\any\netcoreapp2.1\wwwroot\images\Eliecer.jpg" />
+    <file src="C:\Users\Joyner Garcia\Documents\Project\juankmazo2020\TallerWeb\TallerWeb.Web\wwwroot\images\Error_Web.jpg" target="content\wwwroot\images\Error_Web.jpg" />
+    <file src="C:\Users\Joyner Garcia\Documents\Project\juankmazo2020\TallerWeb\TallerWeb.Web\wwwroot\images\Error_Web.jpg" target="contentFiles\any\netcoreapp2.1\wwwroot\images\Error_Web.jpg" />
+    <file src="C:\Users\Joyner Garcia\Documents\Project\juankmazo2020\TallerWeb\TallerWeb.Web\wwwroot\images\Esmeralda.jpg" target="content\wwwroot\images\Esmeralda.jpg" />
+    <file src="C:\Users\Joyner Garcia\Documents\Project\juankmazo2020\TallerWeb\TallerWeb.Web\wwwroot\images\Esmeralda.jpg" target="contentFiles\any\netcoreapp2.1\wwwroot\images\Esmeralda.jpg" />
+    <file src="C:\Users\Joyner Garcia\Documents\Project\juankmazo2020\TallerWeb\TallerWeb.Web\wwwroot\images\Estela.jpg" target="content\wwwroot\images\Estela.jpg" />
+    <file src="C:\Users\Joyner Garcia\Documents\Project\juankmazo2020\TallerWeb\TallerWeb.Web\wwwroot\images\Estela.jpg" target="contentFiles\any\netcoreapp2.1\wwwroot\images\Estela.jpg" />
+    <file src="C:\Users\Joyner Garcia\Documents\Project\juankmazo2020\TallerWeb\TallerWeb.Web\wwwroot\images\Freddy.jpg" target="content\wwwroot\images\Freddy.jpg" />
+    <file src="C:\Users\Joyner Garcia\Documents\Project\juankmazo2020\TallerWeb\TallerWeb.Web\wwwroot\images\Freddy.jpg" target="contentFiles\any\netcoreapp2.1\wwwroot\images\Freddy.jpg" />
+    <file src="C:\Users\Joyner Garcia\Documents\Project\juankmazo2020\TallerWeb\TallerWeb.Web\wwwroot\images\Gimena.jpg" target="content\wwwroot\images\Gimena.jpg" />
+    <file src="C:\Users\Joyner Garcia\Documents\Project\juankmazo2020\TallerWeb\TallerWeb.Web\wwwroot\images\Gimena.jpg" target="contentFiles\any\netcoreapp2.1\wwwroot\images\Gimena.jpg" />
+    <file src="C:\Users\Joyner Garcia\Documents\Project\juankmazo2020\TallerWeb\TallerWeb.Web\wwwroot\images\Gisselle.jpg" target="content\wwwroot\images\Gisselle.jpg" />
+    <file src="C:\Users\Joyner Garcia\Documents\Project\juankmazo2020\TallerWeb\TallerWeb.Web\wwwroot\images\Gisselle.jpg" target="contentFiles\any\netcoreapp2.1\wwwroot\images\Gisselle.jpg" />
+    <file src="C:\Users\Joyner Garcia\Documents\Project\juankmazo2020\TallerWeb\TallerWeb.Web\wwwroot\images\Jeison.jpg" target="content\wwwroot\images\Jeison.jpg" />
+    <file src="C:\Users\Joyner Garcia\Documents\Project\juankmazo2020\TallerWeb\TallerWeb.Web\wwwroot\images\Jeison.jpg" target="contentFiles\any\netcoreapp2.1\wwwroot\images\Jeison.jpg" />
+    <file src="C:\Users\Joyner Garcia\Documents\Project\juankmazo2020\TallerWeb\TallerWeb.Web\wwwroot\images\Josue.jpg" target="content\wwwroot\images\Josue.jpg" />
+    <file src="C:\Users\Joyner Garcia\Documents\Project\juankmazo2020\TallerWeb\TallerWeb.Web\wwwroot\images\Josue.jpg" target="contentFiles\any\netcoreapp2.1\wwwroot\images\Josue.jpg" />
+    <file src="C:\Users\Joyner Garcia\Documents\Project\juankmazo2020\TallerWeb\TallerWeb.Web\wwwroot\images\Kevin.jpg" target="content\wwwroot\images\Kevin.jpg" />
+    <file src="C:\Users\Joyner Garcia\Documents\Project\juankmazo2020\TallerWeb\TallerWeb.Web\wwwroot\images\Kevin.jpg" target="contentFiles\any\netcoreapp2.1\wwwroot\images\Kevin.jpg" />
+    <file src="C:\Users\Joyner Garcia\Documents\Project\juankmazo2020\TallerWeb\TallerWeb.Web\wwwroot\images\Keyla.jpg" target="content\wwwroot\images\Keyla.jpg" />
+    <file src="C:\Users\Joyner Garcia\Documents\Project\juankmazo2020\TallerWeb\TallerWeb.Web\wwwroot\images\Keyla.jpg" target="contentFiles\any\netcoreapp2.1\wwwroot\images\Keyla.jpg" />
+    <file src="C:\Users\Joyner Garcia\Documents\Project\juankmazo2020\TallerWeb\TallerWeb.Web\wwwroot\images\Lidybeth.jpg" target="content\wwwroot\images\Lidybeth.jpg" />
+    <file src="C:\Users\Joyner Garcia\Documents\Project\juankmazo2020\TallerWeb\TallerWeb.Web\wwwroot\images\Lidybeth.jpg" target="contentFiles\any\netcoreapp2.1\wwwroot\images\Lidybeth.jpg" />
+    <file src="C:\Users\Joyner Garcia\Documents\Project\juankmazo2020\TallerWeb\TallerWeb.Web\wwwroot\images\Maira.jpg" target="content\wwwroot\images\Maira.jpg" />
+    <file src="C:\Users\Joyner Garcia\Documents\Project\juankmazo2020\TallerWeb\TallerWeb.Web\wwwroot\images\Maira.jpg" target="contentFiles\any\netcoreapp2.1\wwwroot\images\Maira.jpg" />
+    <file src="C:\Users\Joyner Garcia\Documents\Project\juankmazo2020\TallerWeb\TallerWeb.Web\wwwroot\images\No_image.png" target="content\wwwroot\images\No_image.png" />
+    <file src="C:\Users\Joyner Garcia\Documents\Project\juankmazo2020\TallerWeb\TallerWeb.Web\wwwroot\images\No_image.png" target="contentFiles\any\netcoreapp2.1\wwwroot\images\No_image.png" />
+    <file src="C:\Users\Joyner Garcia\Documents\Project\juankmazo2020\TallerWeb\TallerWeb.Web\wwwroot\images\Pedro.jpg" target="content\wwwroot\images\Pedro.jpg" />
+    <file src="C:\Users\Joyner Garcia\Documents\Project\juankmazo2020\TallerWeb\TallerWeb.Web\wwwroot\images\Pedro.jpg" target="contentFiles\any\netcoreapp2.1\wwwroot\images\Pedro.jpg" />
+    <file src="C:\Users\Joyner Garcia\Documents\Project\juankmazo2020\TallerWeb\TallerWeb.Web\wwwroot\images\Priscila.jpg" target="content\wwwroot\images\Priscila.jpg" />
+    <file src="C:\Users\Joyner Garcia\Documents\Project\juankmazo2020\TallerWeb\TallerWeb.Web\wwwroot\images\Priscila.jpg" target="contentFiles\any\netcoreapp2.1\wwwroot\images\Priscila.jpg" />
+    <file src="C:\Users\Joyner Garcia\Documents\Project\juankmazo2020\TallerWeb\TallerWeb.Web\wwwroot\images\Robet.jpg" target="content\wwwroot\images\Robet.jpg" />
+    <file src="C:\Users\Joyner Garcia\Documents\Project\juankmazo2020\TallerWeb\TallerWeb.Web\wwwroot\images\Robet.jpg" target="contentFiles\any\netcoreapp2.1\wwwroot\images\Robet.jpg" />
+    <file src="C:\Users\Joyner Garcia\Documents\Project\juankmazo2020\TallerWeb\TallerWeb.Web\wwwroot\images\Rut.jpg" target="content\wwwroot\images\Rut.jpg" />
+    <file src="C:\Users\Joyner Garcia\Documents\Project\juankmazo2020\TallerWeb\TallerWeb.Web\wwwroot\images\Rut.jpg" target="contentFiles\any\netcoreapp2.1\wwwroot\images\Rut.jpg" />
+    <file src="C:\Users\Joyner Garcia\Documents\Project\juankmazo2020\TallerWeb\TallerWeb.Web\wwwroot\images\Sansa.jpg" target="content\wwwroot\images\Sansa.jpg" />
+    <file src="C:\Users\Joyner Garcia\Documents\Project\juankmazo2020\TallerWeb\TallerWeb.Web\wwwroot\images\Sansa.jpg" target="contentFiles\any\netcoreapp2.1\wwwroot\images\Sansa.jpg" />
+    <file src="C:\Users\Joyner Garcia\Documents\Project\juankmazo2020\TallerWeb\TallerWeb.Web\wwwroot\images\Sara.jpg" target="content\wwwroot\images\Sara.jpg" />
+    <file src="C:\Users\Joyner Garcia\Documents\Project\juankmazo2020\TallerWeb\TallerWeb.Web\wwwroot\images\Sara.jpg" target="contentFiles\any\netcoreapp2.1\wwwroot\images\Sara.jpg" />
+    <file src="C:\Users\Joyner Garcia\Documents\Project\juankmazo2020\TallerWeb\TallerWeb.Web\wwwroot\images\Selena.jpg" target="content\wwwroot\images\Selena.jpg" />
+    <file src="C:\Users\Joyner Garcia\Documents\Project\juankmazo2020\TallerWeb\TallerWeb.Web\wwwroot\images\Selena.jpg" target="contentFiles\any\netcoreapp2.1\wwwroot\images\Selena.jpg" />
+    <file src="C:\Users\Joyner Garcia\Documents\Project\juankmazo2020\TallerWeb\TallerWeb.Web\wwwroot\images\Steve.jpg" target="content\wwwroot\images\Steve.jpg" />
+    <file src="C:\Users\Joyner Garcia\Documents\Project\juankmazo2020\TallerWeb\TallerWeb.Web\wwwroot\images\Steve.jpg" target="contentFiles\any\netcoreapp2.1\wwwroot\images\Steve.jpg" />
+    <file src="C:\Users\Joyner Garcia\Documents\Project\juankmazo2020\TallerWeb\TallerWeb.Web\wwwroot\images\Sugey.jpg" target="content\wwwroot\images\Sugey.jpg" />
+    <file src="C:\Users\Joyner Garcia\Documents\Project\juankmazo2020\TallerWeb\TallerWeb.Web\wwwroot\images\Sugey.jpg" target="contentFiles\any\netcoreapp2.1\wwwroot\images\Sugey.jpg" />
+    <file src="C:\Users\Joyner Garcia\Documents\Project\juankmazo2020\TallerWeb\TallerWeb.Web\wwwroot\images\Wilmer.jpg" target="content\wwwroot\images\Wilmer.jpg" />
+    <file src="C:\Users\Joyner Garcia\Documents\Project\juankmazo2020\TallerWeb\TallerWeb.Web\wwwroot\images\Wilmer.jpg" target="contentFiles\any\netcoreapp2.1\wwwroot\images\Wilmer.jpg" />
+    <file src="C:\Users\Joyner Garcia\Documents\Project\juankmazo2020\TallerWeb\TallerWeb.Web\wwwroot\images\Yurley.jpg" target="content\wwwroot\images\Yurley.jpg" />
+    <file src="C:\Users\Joyner Garcia\Documents\Project\juankmazo2020\TallerWeb\TallerWeb.Web\wwwroot\images\Yurley.jpg" target="contentFiles\any\netcoreapp2.1\wwwroot\images\Yurley.jpg" />
+    <file src="C:\Users\Joyner Garcia\Documents\Project\juankmazo2020\TallerWeb\TallerWeb.Web\wwwroot\js\deleteDialog.js" target="content\wwwroot\js\deleteDialog.js" />
+    <file src="C:\Users\Joyner Garcia\Documents\Project\juankmazo2020\TallerWeb\TallerWeb.Web\wwwroot\js\deleteDialog.js" target="contentFiles\any\netcoreapp2.1\wwwroot\js\deleteDialog.js" />
+    <file src="C:\Users\Joyner Garcia\Documents\Project\juankmazo2020\TallerWeb\TallerWeb.Web\wwwroot\js\site.js" target="content\wwwroot\js\site.js" />
+    <file src="C:\Users\Joyner Garcia\Documents\Project\juankmazo2020\TallerWeb\TallerWeb.Web\wwwroot\js\site.js" target="contentFiles\any\netcoreapp2.1\wwwroot\js\site.js" />
+    <file src="C:\Users\Joyner Garcia\Documents\Project\juankmazo2020\TallerWeb\TallerWeb.Web\wwwroot\js\site.min.js" target="content\wwwroot\js\site.min.js" />
+    <file src="C:\Users\Joyner Garcia\Documents\Project\juankmazo2020\TallerWeb\TallerWeb.Web\wwwroot\js\site.min.js" target="contentFiles\any\netcoreapp2.1\wwwroot\js\site.min.js" />
+    <file src="C:\Users\Joyner Garcia\Documents\Project\juankmazo2020\TallerWeb\TallerWeb.Web\wwwroot\lib\bootstrap\.bower.json" target="content\wwwroot\lib\bootstrap\.bower.json" />
+    <file src="C:\Users\Joyner Garcia\Documents\Project\juankmazo2020\TallerWeb\TallerWeb.Web\wwwroot\lib\bootstrap\.bower.json" target="contentFiles\any\netcoreapp2.1\wwwroot\lib\bootstrap\.bower.json" />
+    <file src="C:\Users\Joyner Garcia\Documents\Project\juankmazo2020\TallerWeb\TallerWeb.Web\wwwroot\lib\bootstrap\dist\css\bootstrap-theme.css" target="content\wwwroot\lib\bootstrap\dist\css\bootstrap-theme.css" />
+    <file src="C:\Users\Joyner Garcia\Documents\Project\juankmazo2020\TallerWeb\TallerWeb.Web\wwwroot\lib\bootstrap\dist\css\bootstrap-theme.css" target="contentFiles\any\netcoreapp2.1\wwwroot\lib\bootstrap\dist\css\bootstrap-theme.css" />
+    <file src="C:\Users\Joyner Garcia\Documents\Project\juankmazo2020\TallerWeb\TallerWeb.Web\wwwroot\lib\bootstrap\dist\css\bootstrap-theme.css.map" target="content\wwwroot\lib\bootstrap\dist\css\bootstrap-theme.css.map" />
+    <file src="C:\Users\Joyner Garcia\Documents\Project\juankmazo2020\TallerWeb\TallerWeb.Web\wwwroot\lib\bootstrap\dist\css\bootstrap-theme.css.map" target="contentFiles\any\netcoreapp2.1\wwwroot\lib\bootstrap\dist\css\bootstrap-theme.css.map" />
+    <file src="C:\Users\Joyner Garcia\Documents\Project\juankmazo2020\TallerWeb\TallerWeb.Web\wwwroot\lib\bootstrap\dist\css\bootstrap-theme.min.css" target="content\wwwroot\lib\bootstrap\dist\css\bootstrap-theme.min.css" />
+    <file src="C:\Users\Joyner Garcia\Documents\Project\juankmazo2020\TallerWeb\TallerWeb.Web\wwwroot\lib\bootstrap\dist\css\bootstrap-theme.min.css" target="contentFiles\any\netcoreapp2.1\wwwroot\lib\bootstrap\dist\css\bootstrap-theme.min.css" />
+    <file src="C:\Users\Joyner Garcia\Documents\Project\juankmazo2020\TallerWeb\TallerWeb.Web\wwwroot\lib\bootstrap\dist\css\bootstrap-theme.min.css.map" target="content\wwwroot\lib\bootstrap\dist\css\bootstrap-theme.min.css.map" />
+    <file src="C:\Users\Joyner Garcia\Documents\Project\juankmazo2020\TallerWeb\TallerWeb.Web\wwwroot\lib\bootstrap\dist\css\bootstrap-theme.min.css.map" target="contentFiles\any\netcoreapp2.1\wwwroot\lib\bootstrap\dist\css\bootstrap-theme.min.css.map" />
+    <file src="C:\Users\Joyner Garcia\Documents\Project\juankmazo2020\TallerWeb\TallerWeb.Web\wwwroot\lib\bootstrap\dist\css\bootstrap.css" target="content\wwwroot\lib\bootstrap\dist\css\bootstrap.css" />
+    <file src="C:\Users\Joyner Garcia\Documents\Project\juankmazo2020\TallerWeb\TallerWeb.Web\wwwroot\lib\bootstrap\dist\css\bootstrap.css" target="contentFiles\any\netcoreapp2.1\wwwroot\lib\bootstrap\dist\css\bootstrap.css" />
+    <file src="C:\Users\Joyner Garcia\Documents\Project\juankmazo2020\TallerWeb\TallerWeb.Web\wwwroot\lib\bootstrap\dist\css\bootstrap.css.map" target="content\wwwroot\lib\bootstrap\dist\css\bootstrap.css.map" />
+    <file src="C:\Users\Joyner Garcia\Documents\Project\juankmazo2020\TallerWeb\TallerWeb.Web\wwwroot\lib\bootstrap\dist\css\bootstrap.css.map" target="contentFiles\any\netcoreapp2.1\wwwroot\lib\bootstrap\dist\css\bootstrap.css.map" />
+    <file src="C:\Users\Joyner Garcia\Documents\Project\juankmazo2020\TallerWeb\TallerWeb.Web\wwwroot\lib\bootstrap\dist\css\bootstrap.min.css" target="content\wwwroot\lib\bootstrap\dist\css\bootstrap.min.css" />
+    <file src="C:\Users\Joyner Garcia\Documents\Project\juankmazo2020\TallerWeb\TallerWeb.Web\wwwroot\lib\bootstrap\dist\css\bootstrap.min.css" target="contentFiles\any\netcoreapp2.1\wwwroot\lib\bootstrap\dist\css\bootstrap.min.css" />
+    <file src="C:\Users\Joyner Garcia\Documents\Project\juankmazo2020\TallerWeb\TallerWeb.Web\wwwroot\lib\bootstrap\dist\css\bootstrap.min.css.map" target="content\wwwroot\lib\bootstrap\dist\css\bootstrap.min.css.map" />
+    <file src="C:\Users\Joyner Garcia\Documents\Project\juankmazo2020\TallerWeb\TallerWeb.Web\wwwroot\lib\bootstrap\dist\css\bootstrap.min.css.map" target="contentFiles\any\netcoreapp2.1\wwwroot\lib\bootstrap\dist\css\bootstrap.min.css.map" />
+    <file src="C:\Users\Joyner Garcia\Documents\Project\juankmazo2020\TallerWeb\TallerWeb.Web\wwwroot\lib\bootstrap\dist\fonts\glyphicons-halflings-regular.eot" target="content\wwwroot\lib\bootstrap\dist\fonts\glyphicons-halflings-regular.eot" />
+    <file src="C:\Users\Joyner Garcia\Documents\Project\juankmazo2020\TallerWeb\TallerWeb.Web\wwwroot\lib\bootstrap\dist\fonts\glyphicons-halflings-regular.eot" target="contentFiles\any\netcoreapp2.1\wwwroot\lib\bootstrap\dist\fonts\glyphicons-halflings-regular.eot" />
+    <file src="C:\Users\Joyner Garcia\Documents\Project\juankmazo2020\TallerWeb\TallerWeb.Web\wwwroot\lib\bootstrap\dist\fonts\glyphicons-halflings-regular.svg" target="content\wwwroot\lib\bootstrap\dist\fonts\glyphicons-halflings-regular.svg" />
+    <file src="C:\Users\Joyner Garcia\Documents\Project\juankmazo2020\TallerWeb\TallerWeb.Web\wwwroot\lib\bootstrap\dist\fonts\glyphicons-halflings-regular.svg" target="contentFiles\any\netcoreapp2.1\wwwroot\lib\bootstrap\dist\fonts\glyphicons-halflings-regular.svg" />
+    <file src="C:\Users\Joyner Garcia\Documents\Project\juankmazo2020\TallerWeb\TallerWeb.Web\wwwroot\lib\bootstrap\dist\fonts\glyphicons-halflings-regular.ttf" target="content\wwwroot\lib\bootstrap\dist\fonts\glyphicons-halflings-regular.ttf" />
+    <file src="C:\Users\Joyner Garcia\Documents\Project\juankmazo2020\TallerWeb\TallerWeb.Web\wwwroot\lib\bootstrap\dist\fonts\glyphicons-halflings-regular.ttf" target="contentFiles\any\netcoreapp2.1\wwwroot\lib\bootstrap\dist\fonts\glyphicons-halflings-regular.ttf" />
+    <file src="C:\Users\Joyner Garcia\Documents\Project\juankmazo2020\TallerWeb\TallerWeb.Web\wwwroot\lib\bootstrap\dist\fonts\glyphicons-halflings-regular.woff" target="content\wwwroot\lib\bootstrap\dist\fonts\glyphicons-halflings-regular.woff" />
+    <file src="C:\Users\Joyner Garcia\Documents\Project\juankmazo2020\TallerWeb\TallerWeb.Web\wwwroot\lib\bootstrap\dist\fonts\glyphicons-halflings-regular.woff" target="contentFiles\any\netcoreapp2.1\wwwroot\lib\bootstrap\dist\fonts\glyphicons-halflings-regular.woff" />
+    <file src="C:\Users\Joyner Garcia\Documents\Project\juankmazo2020\TallerWeb\TallerWeb.Web\wwwroot\lib\bootstrap\dist\fonts\glyphicons-halflings-regular.woff2" target="content\wwwroot\lib\bootstrap\dist\fonts\glyphicons-halflings-regular.woff2" />
+    <file src="C:\Users\Joyner Garcia\Documents\Project\juankmazo2020\TallerWeb\TallerWeb.Web\wwwroot\lib\bootstrap\dist\fonts\glyphicons-halflings-regular.woff2" target="contentFiles\any\netcoreapp2.1\wwwroot\lib\bootstrap\dist\fonts\glyphicons-halflings-regular.woff2" />
+    <file src="C:\Users\Joyner Garcia\Documents\Project\juankmazo2020\TallerWeb\TallerWeb.Web\wwwroot\lib\bootstrap\dist\js\bootstrap.js" target="content\wwwroot\lib\bootstrap\dist\js\bootstrap.js" />
+    <file src="C:\Users\Joyner Garcia\Documents\Project\juankmazo2020\TallerWeb\TallerWeb.Web\wwwroot\lib\bootstrap\dist\js\bootstrap.js" target="contentFiles\any\netcoreapp2.1\wwwroot\lib\bootstrap\dist\js\bootstrap.js" />
+    <file src="C:\Users\Joyner Garcia\Documents\Project\juankmazo2020\TallerWeb\TallerWeb.Web\wwwroot\lib\bootstrap\dist\js\bootstrap.min.js" target="content\wwwroot\lib\bootstrap\dist\js\bootstrap.min.js" />
+    <file src="C:\Users\Joyner Garcia\Documents\Project\juankmazo2020\TallerWeb\TallerWeb.Web\wwwroot\lib\bootstrap\dist\js\bootstrap.min.js" target="contentFiles\any\netcoreapp2.1\wwwroot\lib\bootstrap\dist\js\bootstrap.min.js" />
+    <file src="C:\Users\Joyner Garcia\Documents\Project\juankmazo2020\TallerWeb\TallerWeb.Web\wwwroot\lib\bootstrap\dist\js\npm.js" target="content\wwwroot\lib\bootstrap\dist\js\npm.js" />
+    <file src="C:\Users\Joyner Garcia\Documents\Project\juankmazo2020\TallerWeb\TallerWeb.Web\wwwroot\lib\bootstrap\dist\js\npm.js" target="contentFiles\any\netcoreapp2.1\wwwroot\lib\bootstrap\dist\js\npm.js" />
+    <file src="C:\Users\Joyner Garcia\Documents\Project\juankmazo2020\TallerWeb\TallerWeb.Web\wwwroot\lib\bootstrap\LICENSE" target="content\wwwroot\lib\bootstrap\LICENSE" />
+    <file src="C:\Users\Joyner Garcia\Documents\Project\juankmazo2020\TallerWeb\TallerWeb.Web\wwwroot\lib\bootstrap\LICENSE" target="contentFiles\any\netcoreapp2.1\wwwroot\lib\bootstrap\LICENSE" />
+    <file src="C:\Users\Joyner Garcia\Documents\Project\juankmazo2020\TallerWeb\TallerWeb.Web\wwwroot\lib\jquery-validation-unobtrusive\.bower.json" target="content\wwwroot\lib\jquery-validation-unobtrusive\.bower.json" />
+    <file src="C:\Users\Joyner Garcia\Documents\Project\juankmazo2020\TallerWeb\TallerWeb.Web\wwwroot\lib\jquery-validation-unobtrusive\.bower.json" target="contentFiles\any\netcoreapp2.1\wwwroot\lib\jquery-validation-unobtrusive\.bower.json" />
+    <file src="C:\Users\Joyner Garcia\Documents\Project\juankmazo2020\TallerWeb\TallerWeb.Web\wwwroot\lib\jquery-validation-unobtrusive\jquery.validate.unobtrusive.js" target="content\wwwroot\lib\jquery-validation-unobtrusive\jquery.validate.unobtrusive.js" />
+    <file src="C:\Users\Joyner Garcia\Documents\Project\juankmazo2020\TallerWeb\TallerWeb.Web\wwwroot\lib\jquery-validation-unobtrusive\jquery.validate.unobtrusive.js" target="contentFiles\any\netcoreapp2.1\wwwroot\lib\jquery-validation-unobtrusive\jquery.validate.unobtrusive.js" />
+    <file src="C:\Users\Joyner Garcia\Documents\Project\juankmazo2020\TallerWeb\TallerWeb.Web\wwwroot\lib\jquery-validation-unobtrusive\jquery.validate.unobtrusive.min.js" target="content\wwwroot\lib\jquery-validation-unobtrusive\jquery.validate.unobtrusive.min.js" />
+    <file src="C:\Users\Joyner Garcia\Documents\Project\juankmazo2020\TallerWeb\TallerWeb.Web\wwwroot\lib\jquery-validation-unobtrusive\jquery.validate.unobtrusive.min.js" target="contentFiles\any\netcoreapp2.1\wwwroot\lib\jquery-validation-unobtrusive\jquery.validate.unobtrusive.min.js" />
+    <file src="C:\Users\Joyner Garcia\Documents\Project\juankmazo2020\TallerWeb\TallerWeb.Web\wwwroot\lib\jquery-validation-unobtrusive\LICENSE.txt" target="content\wwwroot\lib\jquery-validation-unobtrusive\LICENSE.txt" />
+    <file src="C:\Users\Joyner Garcia\Documents\Project\juankmazo2020\TallerWeb\TallerWeb.Web\wwwroot\lib\jquery-validation-unobtrusive\LICENSE.txt" target="contentFiles\any\netcoreapp2.1\wwwroot\lib\jquery-validation-unobtrusive\LICENSE.txt" />
+    <file src="C:\Users\Joyner Garcia\Documents\Project\juankmazo2020\TallerWeb\TallerWeb.Web\wwwroot\lib\jquery-validation\.bower.json" target="content\wwwroot\lib\jquery-validation\.bower.json" />
+    <file src="C:\Users\Joyner Garcia\Documents\Project\juankmazo2020\TallerWeb\TallerWeb.Web\wwwroot\lib\jquery-validation\.bower.json" target="contentFiles\any\netcoreapp2.1\wwwroot\lib\jquery-validation\.bower.json" />
+    <file src="C:\Users\Joyner Garcia\Documents\Project\juankmazo2020\TallerWeb\TallerWeb.Web\wwwroot\lib\jquery-validation\dist\additional-methods.js" target="content\wwwroot\lib\jquery-validation\dist\additional-methods.js" />
+    <file src="C:\Users\Joyner Garcia\Documents\Project\juankmazo2020\TallerWeb\TallerWeb.Web\wwwroot\lib\jquery-validation\dist\additional-methods.js" target="contentFiles\any\netcoreapp2.1\wwwroot\lib\jquery-validation\dist\additional-methods.js" />
+    <file src="C:\Users\Joyner Garcia\Documents\Project\juankmazo2020\TallerWeb\TallerWeb.Web\wwwroot\lib\jquery-validation\dist\additional-methods.min.js" target="content\wwwroot\lib\jquery-validation\dist\additional-methods.min.js" />
+    <file src="C:\Users\Joyner Garcia\Documents\Project\juankmazo2020\TallerWeb\TallerWeb.Web\wwwroot\lib\jquery-validation\dist\additional-methods.min.js" target="contentFiles\any\netcoreapp2.1\wwwroot\lib\jquery-validation\dist\additional-methods.min.js" />
+    <file src="C:\Users\Joyner Garcia\Documents\Project\juankmazo2020\TallerWeb\TallerWeb.Web\wwwroot\lib\jquery-validation\dist\jquery.validate.js" target="content\wwwroot\lib\jquery-validation\dist\jquery.validate.js" />
+    <file src="C:\Users\Joyner Garcia\Documents\Project\juankmazo2020\TallerWeb\TallerWeb.Web\wwwroot\lib\jquery-validation\dist\jquery.validate.js" target="contentFiles\any\netcoreapp2.1\wwwroot\lib\jquery-validation\dist\jquery.validate.js" />
+    <file src="C:\Users\Joyner Garcia\Documents\Project\juankmazo2020\TallerWeb\TallerWeb.Web\wwwroot\lib\jquery-validation\dist\jquery.validate.min.js" target="content\wwwroot\lib\jquery-validation\dist\jquery.validate.min.js" />
+    <file src="C:\Users\Joyner Garcia\Documents\Project\juankmazo2020\TallerWeb\TallerWeb.Web\wwwroot\lib\jquery-validation\dist\jquery.validate.min.js" target="contentFiles\any\netcoreapp2.1\wwwroot\lib\jquery-validation\dist\jquery.validate.min.js" />
+    <file src="C:\Users\Joyner Garcia\Documents\Project\juankmazo2020\TallerWeb\TallerWeb.Web\wwwroot\lib\jquery-validation\LICENSE.md" target="content\wwwroot\lib\jquery-validation\LICENSE.md" />
+    <file src="C:\Users\Joyner Garcia\Documents\Project\juankmazo2020\TallerWeb\TallerWeb.Web\wwwroot\lib\jquery-validation\LICENSE.md" target="contentFiles\any\netcoreapp2.1\wwwroot\lib\jquery-validation\LICENSE.md" />
+    <file src="C:\Users\Joyner Garcia\Documents\Project\juankmazo2020\TallerWeb\TallerWeb.Web\wwwroot\lib\jquery\.bower.json" target="content\wwwroot\lib\jquery\.bower.json" />
+    <file src="C:\Users\Joyner Garcia\Documents\Project\juankmazo2020\TallerWeb\TallerWeb.Web\wwwroot\lib\jquery\.bower.json" target="contentFiles\any\netcoreapp2.1\wwwroot\lib\jquery\.bower.json" />
+    <file src="C:\Users\Joyner Garcia\Documents\Project\juankmazo2020\TallerWeb\TallerWeb.Web\wwwroot\lib\jquery\dist\jquery.js" target="content\wwwroot\lib\jquery\dist\jquery.js" />
+    <file src="C:\Users\Joyner Garcia\Documents\Project\juankmazo2020\TallerWeb\TallerWeb.Web\wwwroot\lib\jquery\dist\jquery.js" target="contentFiles\any\netcoreapp2.1\wwwroot\lib\jquery\dist\jquery.js" />
+    <file src="C:\Users\Joyner Garcia\Documents\Project\juankmazo2020\TallerWeb\TallerWeb.Web\wwwroot\lib\jquery\dist\jquery.min.js" target="content\wwwroot\lib\jquery\dist\jquery.min.js" />
+    <file src="C:\Users\Joyner Garcia\Documents\Project\juankmazo2020\TallerWeb\TallerWeb.Web\wwwroot\lib\jquery\dist\jquery.min.js" target="contentFiles\any\netcoreapp2.1\wwwroot\lib\jquery\dist\jquery.min.js" />
+    <file src="C:\Users\Joyner Garcia\Documents\Project\juankmazo2020\TallerWeb\TallerWeb.Web\wwwroot\lib\jquery\dist\jquery.min.map" target="content\wwwroot\lib\jquery\dist\jquery.min.map" />
+    <file src="C:\Users\Joyner Garcia\Documents\Project\juankmazo2020\TallerWeb\TallerWeb.Web\wwwroot\lib\jquery\dist\jquery.min.map" target="contentFiles\any\netcoreapp2.1\wwwroot\lib\jquery\dist\jquery.min.map" />
+    <file src="C:\Users\Joyner Garcia\Documents\Project\juankmazo2020\TallerWeb\TallerWeb.Web\wwwroot\lib\jquery\LICENSE.txt" target="content\wwwroot\lib\jquery\LICENSE.txt" />
+    <file src="C:\Users\Joyner Garcia\Documents\Project\juankmazo2020\TallerWeb\TallerWeb.Web\wwwroot\lib\jquery\LICENSE.txt" target="contentFiles\any\netcoreapp2.1\wwwroot\lib\jquery\LICENSE.txt" />
+    <file src="C:\Users\Joyner Garcia\Documents\Project\juankmazo2020\TallerWeb\TallerWeb.Web\appsettings.Development.json" target="content\appsettings.Development.json" />
+    <file src="C:\Users\Joyner Garcia\Documents\Project\juankmazo2020\TallerWeb\TallerWeb.Web\appsettings.Development.json" target="contentFiles\any\netcoreapp2.1\appsettings.Development.json" />
+    <file src="C:\Users\Joyner Garcia\Documents\Project\juankmazo2020\TallerWeb\TallerWeb.Web\appsettings.json" target="content\appsettings.json" />
+    <file src="C:\Users\Joyner Garcia\Documents\Project\juankmazo2020\TallerWeb\TallerWeb.Web\appsettings.json" target="contentFiles\any\netcoreapp2.1\appsettings.json" />
+  </files>
+</package>

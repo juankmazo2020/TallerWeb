@@ -1,0 +1,66 @@
+﻿@model TallerWeb.Web.Data.Entities.Meeting
+
+@{
+    ViewData["Title"] = "Details Meeting";
+}
+
+<link rel="stylesheet" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css" />
+<br />
+<h2>Manage Meetings</h2>
+
+<div>
+    <h4>Meeting</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Name)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Name)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="AddAssistance" asp-route-id="@Model.Id" class="btn btn-primary"><i class="glyphicon glyphicon-plus"></i>Assistance</a>
+    <a asp-action="DetailsChurch1" asp-route-id="@Model.IdChurch" class="btn btn-success">Back to List</a>
+</div>
+<br />
+
+<div class="row">
+    <div class="col-md-12">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h3 class="panel-title">Assistance</h3>
+            </div>
+            <div class="panel-body">
+                <table class="table table-hover table-responsive table-striped" id="MyTable">
+                    <thead>
+                        <tr>
+                            <th>
+                                @Html.DisplayNameFor(model => model.Assistances.FirstOrDefault().User.FullName)
+                            </th>
+                            <th>
+                                @Html.DisplayNameFor(model => model.Assistances.Count)
+                            </th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                        @foreach (var item in Model.Assistances)
+                        {
+                            <tr>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.User.FullName)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.IsPresent)
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>

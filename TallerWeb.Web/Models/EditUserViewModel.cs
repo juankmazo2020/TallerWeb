@@ -55,8 +55,8 @@ namespace TallerWeb.Web.Models
 
         [Display(Name = "Image")] 
         public string ImageFullPath => ImageId == Guid.Empty 
-            ? $"https://localhost:44396/images/No_image.png" 
-            : $"https://tallerweb.blob.core.windows.net/users/{ImageId}";
+            ? $"https://tallerwebweb1.azurewebsites.net/images/No_image.png" 
+            : $"https://tallerweb123.blob.core.windows.net/users/{ImageId}";
 
         [Display(Name = "Image")]
         public IFormFile ImageFile { get; set; }

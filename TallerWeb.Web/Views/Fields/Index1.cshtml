@@ -30,19 +30,36 @@
                     </thead>
                     <tbody>
 
+                        @if (User.Identity.IsAuthenticated && User.IsInRole("Teacher"))
+                        {
+
+                            int ii = 0;
                             @foreach (var item in Model)
                             {
-                                <tr>
-                                    <td>
-                                        @Html.DisplayFor(modelItem => item.Name)
-                                    </td>
-                                    <td>
-                                        @Html.DisplayFor(modelItem => item.District.Name)
-                                    </td>
-                                    <td>
-                                        <a asp-action="DetailsChurch1" asp-route-id="@item.Id" class="btn btn-info"><i class="glyphicon glyphicon-align-justify"></i></a>
-                                    </td>
-                                </tr>
+                                Convert.ChangeType(item.Id, typeof(String));
+                                if (Convert.ChangeType(@ViewData["ChurchId"], typeof(String)).Equals(Convert.ChangeType(item.Id, typeof(String))))
+                                {
+                                    ii = item.Id;
+                                }
+                            }
+
+                            @foreach (var item in Model)
+                            {
+                                if (item.Id == ii)
+                                {
+                                    <tr>
+                                        <td>
+                                            @Html.DisplayFor(modelItem => item.Name)
+                                        </td>
+                                        <td>
+                                            @Html.DisplayFor(modelItem => item.District.Name)
+                                        </td>
+                                        <td>
+                                            <a asp-action="DetailsChurch1" asp-route-id="@item.Id" class="btn btn-info"><i class="glyphicon glyphicon-align-justify"></i></a>
+                                        </td>
+                                    </tr>
+                                    }
+                                }
                             }
 
                         </tbody>

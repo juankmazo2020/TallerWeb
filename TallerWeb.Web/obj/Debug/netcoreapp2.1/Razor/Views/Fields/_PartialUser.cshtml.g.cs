@@ -121,7 +121,7 @@ using TallerWeb.Web.Models;
             WriteLiteral("\r\n                                        </td>\r\n                                        <td>\r\n                                            ");
             EndContext();
             BeginContext(1713, 129, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "e0d0df20740242cc9a92d64a5824d09f", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "8d9c23c2595f4e739168534b807da468", async() => {
                 BeginContext(1789, 49, true);
                 WriteLiteral("<i class=\"glyphicon glyphicon-align-justify\"></i>");
                 EndContext();

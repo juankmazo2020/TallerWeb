@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Http;
 using System;
+using System.IO;
 using System.Threading.Tasks;
 
 namespace TallerWeb.Web.Helpers
@@ -11,7 +12,9 @@ namespace TallerWeb.Web.Helpers
             Task<Guid> UploadBlobAsync(byte[] file, string containerName);
 
             Task<Guid> UploadBlobAsync(string image, string containerName);
-        }
+
+            Task<Guid> UploadBlobAsync(Stream stream, string containerName);
+    }
 
 
 }

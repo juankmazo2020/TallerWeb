@@ -40,6 +40,27 @@ namespace TallerWeb.Web.Controllers
         [Authorize(Roles = "Admin, Teacher")]
         public async Task<IActionResult> Index()
         {
+            User user = await _userHelper.GetUserAsync(User.Identity.Name);
+            if (user == null)
+            {
+                return NotFound();
+            }
+
+
+            District district = await _context.Districts.FirstOrDefaultAsync(d => d.Churches.FirstOrDefault(c => c.Id == user.Church.Id) != null);
+            if (district == null)
+            {
+                district = await _context.Districts.FirstOrDefaultAsync();
+            }
+
+            Field field = await _context.Fields.FirstOrDefaultAsync(c => c.Districts.FirstOrDefault(d => d.Id == district.Id) != null);
+            if (field == null)
+            {
+                field = await _context.Fields.FirstOrDefaultAsync();
+            }
+
+            ViewData["ChurchId"] = user.Church.Id;
+
             return View(await _context.Users
                 .Include(u => u.Church)
                 .ToListAsync());

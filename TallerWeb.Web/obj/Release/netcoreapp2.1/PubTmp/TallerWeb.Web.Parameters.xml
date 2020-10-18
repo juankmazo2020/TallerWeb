@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <parameters>
-  <parameter name="IIS Web Application Name" description="" value="TallerWebWeb" tags="IisApp">
-    <parameterEntry kind="ProviderPath" scope="IisApp" match="^C:\\Users\\Joyner\ Garcia\\Documents\\Project\\TallerWeb\\TallerWeb\.Web\\obj\\Release\\netcoreapp2\.1\\PubTmp\\Out\\$" />
+  <parameter name="IIS Web Application Name" description="" value="TallerWebWeb1" tags="IisApp">
+    <parameterEntry kind="ProviderPath" scope="IisApp" match="^C:\\Users\\Joyner\ Garcia\\Documents\\Project\\juankmazo2020\\TallerWeb\\TallerWeb\.Web\\obj\\Release\\netcoreapp2\.1\\PubTmp\\Out\\$" />
   </parameter>
 </parameters>

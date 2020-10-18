@@ -72,7 +72,7 @@ using TallerWeb.Web.Models;
             WriteLiteral("\r\n<link rel=\"stylesheet\" href=\"https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css\" />\r\n<br />\r\n");
             EndContext();
             BeginContext(197, 28, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("flash", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "9acbfedb41974a4f9e04e67108db585d", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("flash", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "ad04ed25c5674b93987ba205b56faa36", async() => {
             }
             );
             __Vereyon_Web_FlashTagHelper = CreateTagHelper<global::Vereyon.Web.FlashTagHelper>();
@@ -135,7 +135,7 @@ __Vereyon_Web_FlashTagHelper.Dismissable = true;
             WriteLiteral("\r\n        </dd>\r\n    </dl>\r\n</div>\r\n<div>\r\n    ");
             EndContext();
             BeginContext(697, 127, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "34ddbcbdbdf8482dbc06c691fa8ebcee", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "79e29fb0e3834b58b69c11cb37737b0a", async() => {
                 BeginContext(773, 47, true);
                 WriteLiteral("<i class=\"glyphicon glyphicon-plus\"></i>Metting");
                 EndContext();
@@ -171,7 +171,7 @@ __Vereyon_Web_FlashTagHelper.Dismissable = true;
             WriteLiteral("\r\n    ");
             EndContext();
             BeginContext(830, 84, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "3585ad0edbbd402aa13b85145f179c39", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "412d91bf2d204fffa9eb109587a7cac0", async() => {
                 BeginContext(906, 4, true);
                 WriteLiteral("Edit");
                 EndContext();
@@ -207,7 +207,7 @@ __Vereyon_Web_FlashTagHelper.Dismissable = true;
             WriteLiteral("\r\n    ");
             EndContext();
             BeginContext(920, 105, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "2c9f7636b42b48a1894cd1c064a27a15", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ba277c3dd08944239029c058b88bb8e6", async() => {
                 BeginContext(1009, 12, true);
                 WriteLiteral("Back to List");
                 EndContext();
@@ -307,7 +307,7 @@ __Vereyon_Web_FlashTagHelper.Dismissable = true;
             WriteLiteral("\r\n                                </td>\r\n                                <td>\r\n                                    ");
             EndContext();
             BeginContext(2420, 122, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ee7fbcf1a3684772a05df350b700be50", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "f8dd4e5daff544e0a790a80c13031b14", async() => {
                 BeginContext(2496, 42, true);
                 WriteLiteral("<i class=\"glyphicon glyphicon-pencil\"></i>");
                 EndContext();
@@ -361,7 +361,7 @@ __Vereyon_Web_FlashTagHelper.Dismissable = true;
             WriteLiteral("                    </tbody>\r\n                </table>\r\n            </div>\r\n        </div>\r\n    </div>\r\n</div>\r\n\r\n");
             EndContext();
             BeginContext(2956, 32, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("partial", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "2bc6658b776f4590bc7696bf2ff4cc07", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("partial", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "ade8110f2158400c81637081b99bd87b", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_TagHelpers_PartialTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.TagHelpers.PartialTagHelper>();

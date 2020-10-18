@@ -36,8 +36,13 @@ namespace TallerWeb.Web.Helpers
             Stream stream = File.OpenRead(image);
             return await UploadStreamAsync(stream, containerName);
         }
-        
-        private async Task<Guid> UploadStreamAsync (Stream stream, string containerName)
+
+        public async Task<Guid> UploadBlobAsync(Stream stream, string containerName)
+        {
+            return await UploadStreamAsync(stream, containerName);
+        }
+
+        private async Task<Guid> UploadStreamAsync(Stream stream, string containerName)
         {
             Guid name = Guid.NewGuid();
             CloudBlobContainer container = _blobClient.GetContainerReference(containerName);
@@ -46,6 +51,7 @@ namespace TallerWeb.Web.Helpers
             return name;
         }
     }
+
 
 
 }

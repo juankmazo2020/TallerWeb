@@ -1,0 +1,8 @@
+C:\Users\Joyner Garcia\Documents\Project\juankmazo2020\TallerWeb\obj\Debug\net5.0\TallerWeb.csprojAssemblyReference.cache
+C:\Users\Joyner Garcia\Documents\Project\juankmazo2020\TallerWeb\obj\Debug\net5.0\TallerWeb.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Joyner Garcia\Documents\Project\juankmazo2020\TallerWeb\obj\Debug\net5.0\TallerWeb.AssemblyInfoInputs.cache
+C:\Users\Joyner Garcia\Documents\Project\juankmazo2020\TallerWeb\obj\Debug\net5.0\TallerWeb.AssemblyInfo.cs
+C:\Users\Joyner Garcia\Documents\Project\juankmazo2020\TallerWeb\obj\Debug\net5.0\TallerWeb.csproj.CoreCompileInputs.cache
+C:\Users\Joyner Garcia\Documents\Project\juankmazo2020\TallerWeb\obj\Debug\net5.0\TallerWeb.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Joyner Garcia\Documents\Project\juankmazo2020\TallerWeb\obj\Debug\net5.0\TallerWeb.RazorAssemblyInfo.cache
+C:\Users\Joyner Garcia\Documents\Project\juankmazo2020\TallerWeb\obj\Debug\net5.0\TallerWeb.RazorAssemblyInfo.cs
